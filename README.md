@@ -19,6 +19,16 @@ GitHub  :https://github.com/kevinlq
 ## windows平台
 使用`MinGW工具链进行编译`
 
+### 错误
+- 找不到 `opencl_kernels_imgproc.hpp`
+
+![](/screen/opencl_kernels_imgproc.hpp-norFind.png)
+
+**解决办法**
+
+查找该文件在哪里：`build_mingw53_32\modules\imgproc`
+
+![](/screen/opencl_kernels_imgproc.hpp-norFind-A.png)
 
 ## android平台
 
