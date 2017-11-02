@@ -17,7 +17,7 @@ GitHub  :https://github.com/kevinlq
 编译成静态库和静态库
 
 ## windows平台
-使用`MinGW工具链进行编译`
+使用`MinGW`工具链进行编译
 
 ### 错误
 - 找不到 `opencl_kernels_imgproc.hpp`
