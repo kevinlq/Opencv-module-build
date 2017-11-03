@@ -9,10 +9,10 @@ Oschina :http://git.oschina.net/kevinlq0912
 GitHub  :https://github.com/kevinlq 
 
 ## 环境说明
->OS:windows7 64b
-Qt 5.7.0
-MinGW:53032
-CMake:3.10.0-rc3-w64
+>OS:windows7 64b  
+Qt 5.7.0  
+MinGW:53032  
+CMake:3.10.0-rc3-w64  
 
 ## 全部编译
 
