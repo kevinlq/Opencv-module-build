@@ -33,6 +33,9 @@ CMake:3.10.0-rc3-w64
 ## 编译`core`和`imgproc`两大模块
 
 - `core`模块不依赖任何模块
+
+实际中发现需要添加`3rdparty/include/opencl/1.2/CL/cl.h`文件
+
 - `imgproc`模块依赖`core`模块
 
 编译成静态库
