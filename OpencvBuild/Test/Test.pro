@@ -11,6 +11,12 @@ QT       += core gui
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
 INCLUDEPATH +=$$PWD/../Opencv/Opencv/core/include
+INCLUDEPATH +=$$PWD/../Opencv/Opencv/imgproc/include
+
+INCLUDEPATH +=$$PWD/../Opencv/Include
+
+LIBS    += -L$$PWD/../Opencv/Lib/$${DIR_PLATFORM}/$${DIR_COMPILER}/$${DIR_COMPILEMODE}/ -lopencvCoreD
+LIBS    += -L$$PWD/../Opencv/Lib/$${DIR_PLATFORM}/$${DIR_COMPILER}/$${DIR_COMPILEMODE}/ -lopencvImgProcD
 
 TARGET = Test
 TEMPLATE = app

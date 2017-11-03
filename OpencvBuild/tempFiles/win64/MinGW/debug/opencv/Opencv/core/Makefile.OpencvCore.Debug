@@ -1150,7 +1150,8 @@ debug/glob.o: E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/c
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/arithm_core.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/arithm_simd.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/hal_replacement.hpp \
-		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Include/custom_hal.hpp
+		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Include/custom_hal.hpp \
+		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/codedef.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\glob.o E:\liqi\my_project\Opencv-module-build\OpencvBuild\Opencv\Opencv\core\src\glob.cpp
 
 debug/kmeans.o: E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/kmeans.cpp E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/precomp.hpp \
@@ -2319,7 +2320,8 @@ debug/system.o: E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/arithm_core.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/arithm_simd.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/hal_replacement.hpp \
-		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Include/custom_hal.hpp
+		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Include/custom_hal.hpp \
+		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Include/modules/core/version_string.inc
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\system.o E:\liqi\my_project\Opencv-module-build\OpencvBuild\Opencv\Opencv\core\src\system.cpp
 
 debug/tables.o: E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/tables.cpp E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/precomp.hpp \

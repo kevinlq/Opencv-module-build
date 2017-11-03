@@ -74,5 +74,6 @@ SOURCES += \
     src/types.cpp \
     src/umatrix.cpp \
     src/va_intel.cpp
+#    opencl_kernels_core.cpp
 
 
