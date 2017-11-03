@@ -43,7 +43,7 @@ CMake:3.10.0-rc3-w64
 ### windows平台
 使用`MinGW`工具链进行编译
 
-- 编译core模块
+- **编译core模块**
 
 core模块编译过程中也是遇到了一些问题，大部分记录了下来，详细在后面问题记录里面
 
@@ -123,7 +123,7 @@ Google了下，这个问题是编码问题造成了，需要把自己电脑的�
 Debug:18.2M,Release:2.86M
 
 
-- 编译imgproc模块
+- **编译imgproc模块**
 
 imgproc模块依赖于core模块，所以需要将core模块头文件、静态库(上一步编译好的)包含进来.
 
@@ -132,18 +132,22 @@ imgproc模块依赖于core模块，所以需要将core模块头文件、静态�
 #### 错误
 和编译core模块类似，出现了找不到`opencl_kernels_imgproc.hpp`文件，同样该文件是编译opencv源码后生成的，此处需要拷贝过来，然后添加包含路径:
 
-![](OpencvBuild/screen/imgproc_modules.png)
+![编译错误](OpencvBuild/screen/imgproc_modules.png)
 
 接着进行编译，约1分钟编译ok了.
 
 ImgProc:Release:3.74M;Debug:22.3M
 
 
-- 测试使用
+- **测试使用**
+
 测试工程添加包含路径，和库路径:
 
-![](/OpencvBuild/screen/test_pro.png)
+![引入静态库路径](/OpencvBuild/screen/test_pro.png)
 
+在main函数文件中引入时出现了链接错误，意思是找不到某些函数方法的实现了，即找不到.cpp文件实现了，这说明上一步生成的静态库中缺少某些函数的实现，静态库编译不正确，重新编译.
+
+![测试错误](/OpencvBuild/screen/test_error.png)
 
 ### android平台
 
