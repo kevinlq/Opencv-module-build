@@ -151,6 +151,7 @@ CONFIG += plugin
 
 #QMAKE_LFLAGS += -static-libgcc
 QMAKE_LFLAGS += -frtti -fexceptions
+QMAKE_LFLAGS += -lz
 
 CONFIG(staticlib, staticlib):{
         DIR_DEPEND_DEST = $$PWD/../Lib/$${DIR_PLATFORM}/$${DIR_COMPILER}/$${DIR_COMPILEMODE}

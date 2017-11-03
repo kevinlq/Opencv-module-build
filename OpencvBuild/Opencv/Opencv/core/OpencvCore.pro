@@ -13,6 +13,10 @@ INCLUDEPATH +=$$PWD/include/opencv2
 # 3rdparty file
 INCLUDEPATH +=$$PWD/../3rdparty/include/opencl/1.2
 
+ZLIB_PATH =$$PWD/../zlib-1.2.11
+
+INCLUDEPATH +=$${ZLIB_PATH}
+
 
 DEFINES += __OPENCV_BUILD
 

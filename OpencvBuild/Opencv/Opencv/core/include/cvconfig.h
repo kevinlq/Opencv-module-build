@@ -1,5 +1,5 @@
 /* OpenCV compiled as static or dynamic libs */
-#define BUILD_SHARED_LIBS
+//#define BUILD_SHARED_LIBS
 
 /* Compile for 'real' NVIDIA GPU architectures */
 #define CUDA_ARCH_BIN ""
@@ -121,7 +121,7 @@
 /* #undef HAVE_NVCUVID */
 
 /* OpenCL Support */
-#define HAVE_OPENCL
+//#define HAVE_OPENCL
 /* #undef HAVE_OPENCL_STATIC */
 /* #undef HAVE_OPENCL_SVM */
 
@@ -129,7 +129,7 @@
 #define HAVE_OPENEXR
 
 /* OpenGL support*/
-#define HAVE_OPENGL
+//#define HAVE_OPENGL
 
 /* OpenNI library */
 /* #undef HAVE_OPENNI */

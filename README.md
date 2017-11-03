@@ -51,6 +51,14 @@ core模块编译时需要依赖opencv编译后生成的头文件，所以在编�
 
 
 #### 错误
+- 找不到`cvconfig.h`
+
+![找不到配置头文件](/OpencvBuild/screen/cvconfignotfind.png)
+**解决**
+
+需要到opencv工程里找对应的`cvconfig.h`，具体位置在opencv/build/include/opencv2
+
+
 - 找不到 `opencl_kernels_imgproc.hpp`
 
 ![](/OpencvBuild/screen/opencl_kernels_imgproc.hpp-norFind.png)
@@ -118,6 +126,11 @@ Google了下，这个问题是编码问题造成了，需要把自己电脑的�
 
 然后再core模块中将该头文件包含进去即可解决.
 
+上述解决方案其实多此一举了，直接在`cvconfig.h`文件中添加`WINRT`宏定义即可
+
+`cvconfig.h`中定义了好多模块编译的开关.
+
+
 `core`模块静态库
 
 Debug:18.2M,Release:2.86M
@@ -148,6 +161,9 @@ ImgProc:Release:3.74M;Debug:22.3M
 在main函数文件中引入时出现了链接错误，意思是找不到某些函数方法的实现了，即找不到.cpp文件实现了，这说明上一步生成的静态库中缺少某些函数的实现，静态库编译不正确，重新编译.
 
 ![测试错误](/OpencvBuild/screen/test_error.png)
+
+
+需要添加zlib支持
 
 ### android平台
 
