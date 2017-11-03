@@ -16,10 +16,12 @@
 *.smod
 
 
-
-
-
 # Qt 
 *.user
 *.save
 
+
+tempFiles/
+*.a
+*.dll
+*.lib
