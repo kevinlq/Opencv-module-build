@@ -22,5 +22,4 @@
 # Qt 
 *.user
 *.save
-*debug
-*release
+
