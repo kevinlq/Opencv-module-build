@@ -46,7 +46,6 @@ core模块编译过程中也是遇到了一些问题，大部分记录了下来�
 
 core模块编译时需要依赖opencv编译后生成的头文件，所以在编译模块化时需要提前将源码整体编译一遍，注意编译器版本、opencv版本对应。
 
-- 编译imgproc模块
 
 #### 错误
 - 找不到 `opencl_kernels_imgproc.hpp`
@@ -121,6 +120,20 @@ Google了下，这个问题是编码问题造成了，需要把自己电脑的�
 Debug:18.2M,Release:2.86M
 
 
+- 编译imgproc模块
+
+imgproc模块依赖于core模块，所以需要将core模块头文件、静态库(上一步编译好的)包含进来.
+
+添加core模块包含路径，然后接着编译
+
+#### 错误
+和编译core模块类似，出现了找不到`opencl_kernels_imgproc.hpp`文件，同样该文件是编译opencv源码后生成的，此处需要拷贝过来，然后添加包含路径:
+
+![](OpencvBuild/screen/imgproc_modules.png)
+
+接着进行编译，约1分钟编译ok了.
+
+ImgProc:Release:3.74M;Debug:22.3M
 
 
 ### android平台
@@ -131,3 +144,5 @@ Debug:18.2M,Release:2.86M
 
 ## 版本修改
 - V0.0.1 添加了可以编译成功的core、imgproc两个模块，成功编译成静态库;
+- V0.0.2 成功静态编译core模块;
+- V0.0.3 成功静态编译imgProc模块;
