@@ -17,7 +17,11 @@ GitHub  :https://github.com/kevinlq
 
 提前安装好Qt,CMake，以及opencv源码
 
-使用CMake-gui将opencv的cmake工程转化成makefile，然后使用MinGW进行编译，最后安装。ok.
+使用CMake-gui将opencv的cmake工程转化成makefile，然后使用MinGW进行编译，最后安装。ok
+
+编译完成后的主要路径为：
+![](/OpencvBuild/screen/build_all.png)
+
 
 ## 编译`core`和`imgproc`两大模块
 
@@ -28,6 +32,14 @@ GitHub  :https://github.com/kevinlq
 
 ### windows平台
 使用`MinGW`工具链进行编译
+
+- 编译core模块
+
+core模块编译过程中也是遇到了一些问题，大部分记录了下来，详细在后面问题记录里面
+
+core模块编译时需要依赖opencv编译后生成的头文件，所以在编译模块化时需要提前将源码整体编译一遍，注意编译器版本、opencv版本对应。
+
+- 编译imgproc模块
 
 #### 错误
 - 找不到 `opencl_kernels_imgproc.hpp`
