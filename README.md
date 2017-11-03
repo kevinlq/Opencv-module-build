@@ -8,6 +8,12 @@ QQ      :2313828706
 Oschina :http://git.oschina.net/kevinlq0912   
 GitHub  :https://github.com/kevinlq 
 
+## 环境说明
+>OS:windows7 64b
+Qt 5.7.0
+MinGW:53032
+CMake:3.10.0-rc3-w64
+
 ## 全部编译
 
 因为opencv模块比较多，如今3.3版本包含的更多了。模块化带了的好处就是我们可以自己编译需要的模块，
@@ -19,7 +25,8 @@ GitHub  :https://github.com/kevinlq
 
 使用CMake-gui将opencv的cmake工程转化成makefile，然后使用MinGW进行编译，最后安装。ok
 
-编译完成后的主要路径为：
+编译完成后的主要文件：
+
 ![](/OpencvBuild/screen/build_all.png)
 
 
