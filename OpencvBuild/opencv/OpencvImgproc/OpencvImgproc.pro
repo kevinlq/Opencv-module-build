@@ -15,6 +15,9 @@ INCLUDEPATH +=$$PWD/../core/include/opencv2
 #INCLUDEPATH +=$$PWD/../imgproc/perf
 INCLUDEPATH +=$$PWD/../imgproc/include
 
+#build file
+INCLUDEPATH +=$$PWD/../build_file/imgproc
+
 HEADERS += \
     ../imgproc/src/_geom.h \
     ../imgproc/src/filterengine.hpp \
