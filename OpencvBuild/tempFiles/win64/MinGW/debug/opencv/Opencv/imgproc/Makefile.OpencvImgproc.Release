@@ -11,7 +11,7 @@ MAKEFILE      = Makefile.OpencvImgproc.Release
 
 CC            = gcc
 CXX           = g++
-DEFINES       = -DUNICODE -DQT_QML_DEBUG -DQT_NO_DEBUG -DQT_STATICPLUGIN -DQT_PLUGIN -DQT_GUI_LIB -DQT_CORE_LIB
+DEFINES       = -DUNICODE -D__OPENCV_BUILD -DQT_QML_DEBUG -DQT_NO_DEBUG -DQT_STATICPLUGIN -DQT_PLUGIN -DQT_GUI_LIB -DQT_CORE_LIB
 CFLAGS        = -pipe -fno-keep-inline-dllexport -O2 -Wall -Wextra $(DEFINES)
 CXXFLAGS      = -pipe -fno-keep-inline-dllexport -O2 -std=gnu++11 -frtti -Wall -Wextra -fexceptions -mthreads $(DEFINES)
 INCPATH       = -IE:\liqi\my_project\Opencv-module-build\OpencvBuild\Opencv\Opencv\imgproc -I. -IE:\liqi\my_project\Opencv-module-build\OpencvBuild\Opencv\Opencv\core\include -IE:\liqi\my_project\Opencv-module-build\OpencvBuild\Opencv\Include\opencv2 -IE:\liqi\my_project\Opencv-module-build\OpencvBuild\Opencv\Include\modules\imgproc -IE:\liqi\my_project\Opencv-module-build\OpencvBuild\Opencv\Opencv\imgproc\include -IC:\Qt\Qt5.7.0\5.7\mingw53_32\include -IC:\Qt\Qt5.7.0\5.7\mingw53_32\include\QtGui -IC:\Qt\Qt5.7.0\5.7\mingw53_32\include\QtANGLE -IC:\Qt\Qt5.7.0\5.7\mingw53_32\include\QtCore -Irelease -IC:\Qt\Qt5.7.0\5.7\mingw53_32\mkspecs\win32-g++ 

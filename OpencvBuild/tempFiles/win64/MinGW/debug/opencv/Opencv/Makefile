@@ -24,8 +24,7 @@ SYMLINK       = $(QMAKE) -install ln -f -s
 DEL_DIR       = rmdir
 MOVE          = move
 SUBTARGETS    =  \
-		sub-E--liqi-my_project-Opencv-module-build-OpencvBuild-Opencv-Opencv-core-OpencvCore-pro \
-		sub-E--liqi-my_project-Opencv-module-build-OpencvBuild-Opencv-Opencv-imgproc-OpencvImgproc-pro
+		sub-E--liqi-my_project-Opencv-module-build-OpencvBuild-Opencv-Opencv-core-OpencvCore-pro
 
 
 sub-E--liqi-my_project-Opencv-module-build-OpencvBuild-Opencv-Opencv-core-OpencvCore-pro-qmake_all:  FORCE
@@ -53,31 +52,6 @@ sub-E--liqi-my_project-Opencv-module-build-OpencvBuild-Opencv-Opencv-core-Opencv
 sub-E--liqi-my_project-Opencv-module-build-OpencvBuild-Opencv-Opencv-core-OpencvCore-pro-uninstall_subtargets: FORCE
 	@if not exist core\ mkdir core\ & if not exist core\ exit 1
 	cd core\ && ( if not exist Makefile.OpencvCore $(QMAKE) E:\liqi\my_project\Opencv-module-build\OpencvBuild\Opencv\Opencv\core\OpencvCore.pro -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug" "CONFIG+=MinGW" -o Makefile.OpencvCore ) && $(MAKE) -f Makefile.OpencvCore uninstall
-sub-E--liqi-my_project-Opencv-module-build-OpencvBuild-Opencv-Opencv-imgproc-OpencvImgproc-pro-qmake_all:  FORCE
-	@if not exist imgproc\ mkdir imgproc\ & if not exist imgproc\ exit 1
-	cd imgproc\ && $(QMAKE) E:\liqi\my_project\Opencv-module-build\OpencvBuild\Opencv\Opencv\imgproc\OpencvImgproc.pro -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug" "CONFIG+=MinGW" -o Makefile.OpencvImgproc
-	cd imgproc\ && $(MAKE) -f Makefile.OpencvImgproc qmake_all
-sub-E--liqi-my_project-Opencv-module-build-OpencvBuild-Opencv-Opencv-imgproc-OpencvImgproc-pro: FORCE
-	@if not exist imgproc\ mkdir imgproc\ & if not exist imgproc\ exit 1
-	cd imgproc\ && ( if not exist Makefile.OpencvImgproc $(QMAKE) E:\liqi\my_project\Opencv-module-build\OpencvBuild\Opencv\Opencv\imgproc\OpencvImgproc.pro -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug" "CONFIG+=MinGW" -o Makefile.OpencvImgproc ) && $(MAKE) -f Makefile.OpencvImgproc
-sub-E--liqi-my_project-Opencv-module-build-OpencvBuild-Opencv-Opencv-imgproc-OpencvImgproc-pro-make_first: FORCE
-	@if not exist imgproc\ mkdir imgproc\ & if not exist imgproc\ exit 1
-	cd imgproc\ && ( if not exist Makefile.OpencvImgproc $(QMAKE) E:\liqi\my_project\Opencv-module-build\OpencvBuild\Opencv\Opencv\imgproc\OpencvImgproc.pro -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug" "CONFIG+=MinGW" -o Makefile.OpencvImgproc ) && $(MAKE) -f Makefile.OpencvImgproc 
-sub-E--liqi-my_project-Opencv-module-build-OpencvBuild-Opencv-Opencv-imgproc-OpencvImgproc-pro-all: FORCE
-	@if not exist imgproc\ mkdir imgproc\ & if not exist imgproc\ exit 1
-	cd imgproc\ && ( if not exist Makefile.OpencvImgproc $(QMAKE) E:\liqi\my_project\Opencv-module-build\OpencvBuild\Opencv\Opencv\imgproc\OpencvImgproc.pro -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug" "CONFIG+=MinGW" -o Makefile.OpencvImgproc ) && $(MAKE) -f Makefile.OpencvImgproc all
-sub-E--liqi-my_project-Opencv-module-build-OpencvBuild-Opencv-Opencv-imgproc-OpencvImgproc-pro-clean: FORCE
-	@if not exist imgproc\ mkdir imgproc\ & if not exist imgproc\ exit 1
-	cd imgproc\ && ( if not exist Makefile.OpencvImgproc $(QMAKE) E:\liqi\my_project\Opencv-module-build\OpencvBuild\Opencv\Opencv\imgproc\OpencvImgproc.pro -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug" "CONFIG+=MinGW" -o Makefile.OpencvImgproc ) && $(MAKE) -f Makefile.OpencvImgproc clean
-sub-E--liqi-my_project-Opencv-module-build-OpencvBuild-Opencv-Opencv-imgproc-OpencvImgproc-pro-distclean: FORCE
-	@if not exist imgproc\ mkdir imgproc\ & if not exist imgproc\ exit 1
-	cd imgproc\ && ( if not exist Makefile.OpencvImgproc $(QMAKE) E:\liqi\my_project\Opencv-module-build\OpencvBuild\Opencv\Opencv\imgproc\OpencvImgproc.pro -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug" "CONFIG+=MinGW" -o Makefile.OpencvImgproc ) && $(MAKE) -f Makefile.OpencvImgproc distclean
-sub-E--liqi-my_project-Opencv-module-build-OpencvBuild-Opencv-Opencv-imgproc-OpencvImgproc-pro-install_subtargets: FORCE
-	@if not exist imgproc\ mkdir imgproc\ & if not exist imgproc\ exit 1
-	cd imgproc\ && ( if not exist Makefile.OpencvImgproc $(QMAKE) E:\liqi\my_project\Opencv-module-build\OpencvBuild\Opencv\Opencv\imgproc\OpencvImgproc.pro -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug" "CONFIG+=MinGW" -o Makefile.OpencvImgproc ) && $(MAKE) -f Makefile.OpencvImgproc install
-sub-E--liqi-my_project-Opencv-module-build-OpencvBuild-Opencv-Opencv-imgproc-OpencvImgproc-pro-uninstall_subtargets: FORCE
-	@if not exist imgproc\ mkdir imgproc\ & if not exist imgproc\ exit 1
-	cd imgproc\ && ( if not exist Makefile.OpencvImgproc $(QMAKE) E:\liqi\my_project\Opencv-module-build\OpencvBuild\Opencv\Opencv\imgproc\OpencvImgproc.pro -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug" "CONFIG+=MinGW" -o Makefile.OpencvImgproc ) && $(MAKE) -f Makefile.OpencvImgproc uninstall
 
 Makefile: E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/Opencv.pro C:/Qt/Qt5.7.0/5.7/mingw53_32/mkspecs/win32-g++/qmake.conf C:/Qt/Qt5.7.0/5.7/mingw53_32/mkspecs/features/spec_pre.prf \
 		C:/Qt/Qt5.7.0/5.7/mingw53_32/mkspecs/qdevice.pri \
@@ -369,47 +343,35 @@ E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/Opencv.pro:
 qmake: FORCE
 	@$(QMAKE) -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug" "CONFIG+=MinGW" -o Makefile E:\liqi\my_project\Opencv-module-build\OpencvBuild\Opencv\Opencv\Opencv.pro
 
-qmake_all: sub-E--liqi-my_project-Opencv-module-build-OpencvBuild-Opencv-Opencv-core-OpencvCore-pro-qmake_all sub-E--liqi-my_project-Opencv-module-build-OpencvBuild-Opencv-Opencv-imgproc-OpencvImgproc-pro-qmake_all FORCE
+qmake_all: sub-E--liqi-my_project-Opencv-module-build-OpencvBuild-Opencv-Opencv-core-OpencvCore-pro-qmake_all FORCE
 
-make_first: sub-E--liqi-my_project-Opencv-module-build-OpencvBuild-Opencv-Opencv-core-OpencvCore-pro-make_first sub-E--liqi-my_project-Opencv-module-build-OpencvBuild-Opencv-Opencv-imgproc-OpencvImgproc-pro-make_first  FORCE
-all: sub-E--liqi-my_project-Opencv-module-build-OpencvBuild-Opencv-Opencv-core-OpencvCore-pro-all sub-E--liqi-my_project-Opencv-module-build-OpencvBuild-Opencv-Opencv-imgproc-OpencvImgproc-pro-all  FORCE
-clean: sub-E--liqi-my_project-Opencv-module-build-OpencvBuild-Opencv-Opencv-core-OpencvCore-pro-clean sub-E--liqi-my_project-Opencv-module-build-OpencvBuild-Opencv-Opencv-imgproc-OpencvImgproc-pro-clean  FORCE
-distclean: sub-E--liqi-my_project-Opencv-module-build-OpencvBuild-Opencv-Opencv-core-OpencvCore-pro-distclean sub-E--liqi-my_project-Opencv-module-build-OpencvBuild-Opencv-Opencv-imgproc-OpencvImgproc-pro-distclean  FORCE
+make_first: sub-E--liqi-my_project-Opencv-module-build-OpencvBuild-Opencv-Opencv-core-OpencvCore-pro-make_first  FORCE
+all: sub-E--liqi-my_project-Opencv-module-build-OpencvBuild-Opencv-Opencv-core-OpencvCore-pro-all  FORCE
+clean: sub-E--liqi-my_project-Opencv-module-build-OpencvBuild-Opencv-Opencv-core-OpencvCore-pro-clean  FORCE
+distclean: sub-E--liqi-my_project-Opencv-module-build-OpencvBuild-Opencv-Opencv-core-OpencvCore-pro-distclean  FORCE
 	-$(DEL_FILE) Makefile
-install_subtargets: sub-E--liqi-my_project-Opencv-module-build-OpencvBuild-Opencv-Opencv-core-OpencvCore-pro-install_subtargets sub-E--liqi-my_project-Opencv-module-build-OpencvBuild-Opencv-Opencv-imgproc-OpencvImgproc-pro-install_subtargets FORCE
-uninstall_subtargets: sub-E--liqi-my_project-Opencv-module-build-OpencvBuild-Opencv-Opencv-core-OpencvCore-pro-uninstall_subtargets sub-E--liqi-my_project-Opencv-module-build-OpencvBuild-Opencv-Opencv-imgproc-OpencvImgproc-pro-uninstall_subtargets FORCE
+install_subtargets: sub-E--liqi-my_project-Opencv-module-build-OpencvBuild-Opencv-Opencv-core-OpencvCore-pro-install_subtargets FORCE
+uninstall_subtargets: sub-E--liqi-my_project-Opencv-module-build-OpencvBuild-Opencv-Opencv-core-OpencvCore-pro-uninstall_subtargets FORCE
 
 sub-E--liqi-my_project-Opencv-module-build-OpencvBuild-Opencv-Opencv-core-OpencvCore-pro-debug:
 	@if not exist core\ mkdir core\ & if not exist core\ exit 1
 	cd core\ && ( if not exist Makefile.OpencvCore $(QMAKE) E:\liqi\my_project\Opencv-module-build\OpencvBuild\Opencv\Opencv\core\OpencvCore.pro -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug" "CONFIG+=MinGW" -o Makefile.OpencvCore ) && $(MAKE) -f Makefile.OpencvCore debug
-sub-E--liqi-my_project-Opencv-module-build-OpencvBuild-Opencv-Opencv-imgproc-OpencvImgproc-pro-debug:
-	@if not exist imgproc\ mkdir imgproc\ & if not exist imgproc\ exit 1
-	cd imgproc\ && ( if not exist Makefile.OpencvImgproc $(QMAKE) E:\liqi\my_project\Opencv-module-build\OpencvBuild\Opencv\Opencv\imgproc\OpencvImgproc.pro -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug" "CONFIG+=MinGW" -o Makefile.OpencvImgproc ) && $(MAKE) -f Makefile.OpencvImgproc debug
-debug: sub-E--liqi-my_project-Opencv-module-build-OpencvBuild-Opencv-Opencv-core-OpencvCore-pro-debug sub-E--liqi-my_project-Opencv-module-build-OpencvBuild-Opencv-Opencv-imgproc-OpencvImgproc-pro-debug
+debug: sub-E--liqi-my_project-Opencv-module-build-OpencvBuild-Opencv-Opencv-core-OpencvCore-pro-debug
 
 sub-E--liqi-my_project-Opencv-module-build-OpencvBuild-Opencv-Opencv-core-OpencvCore-pro-release:
 	@if not exist core\ mkdir core\ & if not exist core\ exit 1
 	cd core\ && ( if not exist Makefile.OpencvCore $(QMAKE) E:\liqi\my_project\Opencv-module-build\OpencvBuild\Opencv\Opencv\core\OpencvCore.pro -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug" "CONFIG+=MinGW" -o Makefile.OpencvCore ) && $(MAKE) -f Makefile.OpencvCore release
-sub-E--liqi-my_project-Opencv-module-build-OpencvBuild-Opencv-Opencv-imgproc-OpencvImgproc-pro-release:
-	@if not exist imgproc\ mkdir imgproc\ & if not exist imgproc\ exit 1
-	cd imgproc\ && ( if not exist Makefile.OpencvImgproc $(QMAKE) E:\liqi\my_project\Opencv-module-build\OpencvBuild\Opencv\Opencv\imgproc\OpencvImgproc.pro -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug" "CONFIG+=MinGW" -o Makefile.OpencvImgproc ) && $(MAKE) -f Makefile.OpencvImgproc release
-release: sub-E--liqi-my_project-Opencv-module-build-OpencvBuild-Opencv-Opencv-core-OpencvCore-pro-release sub-E--liqi-my_project-Opencv-module-build-OpencvBuild-Opencv-Opencv-imgproc-OpencvImgproc-pro-release
+release: sub-E--liqi-my_project-Opencv-module-build-OpencvBuild-Opencv-Opencv-core-OpencvCore-pro-release
 
 sub-E--liqi-my_project-Opencv-module-build-OpencvBuild-Opencv-Opencv-core-OpencvCore-pro-check:
 	@if not exist core\ mkdir core\ & if not exist core\ exit 1
 	cd core\ && ( if not exist Makefile.OpencvCore $(QMAKE) E:\liqi\my_project\Opencv-module-build\OpencvBuild\Opencv\Opencv\core\OpencvCore.pro -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug" "CONFIG+=MinGW" -o Makefile.OpencvCore ) && $(MAKE) -f Makefile.OpencvCore check
-sub-E--liqi-my_project-Opencv-module-build-OpencvBuild-Opencv-Opencv-imgproc-OpencvImgproc-pro-check:
-	@if not exist imgproc\ mkdir imgproc\ & if not exist imgproc\ exit 1
-	cd imgproc\ && ( if not exist Makefile.OpencvImgproc $(QMAKE) E:\liqi\my_project\Opencv-module-build\OpencvBuild\Opencv\Opencv\imgproc\OpencvImgproc.pro -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug" "CONFIG+=MinGW" -o Makefile.OpencvImgproc ) && $(MAKE) -f Makefile.OpencvImgproc check
-check: sub-E--liqi-my_project-Opencv-module-build-OpencvBuild-Opencv-Opencv-core-OpencvCore-pro-check sub-E--liqi-my_project-Opencv-module-build-OpencvBuild-Opencv-Opencv-imgproc-OpencvImgproc-pro-check
+check: sub-E--liqi-my_project-Opencv-module-build-OpencvBuild-Opencv-Opencv-core-OpencvCore-pro-check
 
 sub-E--liqi-my_project-Opencv-module-build-OpencvBuild-Opencv-Opencv-core-OpencvCore-pro-benchmark:
 	@if not exist core\ mkdir core\ & if not exist core\ exit 1
 	cd core\ && ( if not exist Makefile.OpencvCore $(QMAKE) E:\liqi\my_project\Opencv-module-build\OpencvBuild\Opencv\Opencv\core\OpencvCore.pro -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug" "CONFIG+=MinGW" -o Makefile.OpencvCore ) && $(MAKE) -f Makefile.OpencvCore benchmark
-sub-E--liqi-my_project-Opencv-module-build-OpencvBuild-Opencv-Opencv-imgproc-OpencvImgproc-pro-benchmark:
-	@if not exist imgproc\ mkdir imgproc\ & if not exist imgproc\ exit 1
-	cd imgproc\ && ( if not exist Makefile.OpencvImgproc $(QMAKE) E:\liqi\my_project\Opencv-module-build\OpencvBuild\Opencv\Opencv\imgproc\OpencvImgproc.pro -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug" "CONFIG+=MinGW" -o Makefile.OpencvImgproc ) && $(MAKE) -f Makefile.OpencvImgproc benchmark
-benchmark: sub-E--liqi-my_project-Opencv-module-build-OpencvBuild-Opencv-Opencv-core-OpencvCore-pro-benchmark sub-E--liqi-my_project-Opencv-module-build-OpencvBuild-Opencv-Opencv-imgproc-OpencvImgproc-pro-benchmark
+benchmark: sub-E--liqi-my_project-Opencv-module-build-OpencvBuild-Opencv-Opencv-core-OpencvCore-pro-benchmark
 install:install_subtargets  FORCE
 
 uninstall: uninstall_subtargets FORCE

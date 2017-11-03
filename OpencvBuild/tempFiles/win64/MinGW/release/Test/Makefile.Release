@@ -209,6 +209,7 @@ release/main.o: E:/liqi/my_project/Opencv-module-build/OpencvBuild/Test/main.cpp
 		C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtGui/qguiapplication.h \
 		C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtGui/qinputmethod.h \
 		C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtWidgets/QWidget \
+		C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtCore/QDebug \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/imgproc.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/core.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/core/cvdef.h \

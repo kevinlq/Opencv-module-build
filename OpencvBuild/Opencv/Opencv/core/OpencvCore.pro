@@ -5,12 +5,10 @@ TEMPLATE    = lib
 
 TARGET  = opencvCore$${FILE_POSTFIX}
 
-# include opencv cor include
+# include opencv core include
 INCLUDEPATH +=$$PWD/include
+INCLUDEPATH +=$$PWD/include/opencv2
 
-INCLUDEPATH +=$$PWD/../../Include
-INCLUDEPATH +=$$PWD/../../Include/opencv2
-INCLUDEPATH +=$$PWD/../../Include/modules/core
 
 # 3rdparty file
 INCLUDEPATH +=$$PWD/../3rdparty/include/opencl/1.2

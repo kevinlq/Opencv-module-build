@@ -14,7 +14,7 @@ CXX           = g++
 DEFINES       = -DUNICODE -D__OPENCV_BUILD -DQT_STATICPLUGIN -DQT_PLUGIN -DQT_GUI_LIB -DQT_CORE_LIB
 CFLAGS        = -pipe -fno-keep-inline-dllexport -g -Wall -Wextra $(DEFINES)
 CXXFLAGS      = -pipe -fno-keep-inline-dllexport -g -std=gnu++11 -frtti -Wall -Wextra -fexceptions -mthreads $(DEFINES)
-INCPATH       = -IE:\liqi\my_project\Opencv-module-build\OpencvBuild\Opencv\Opencv\core -I. -IE:\liqi\my_project\Opencv-module-build\OpencvBuild\Opencv\Opencv\core\include -IE:\liqi\my_project\Opencv-module-build\OpencvBuild\Opencv\Include -IE:\liqi\my_project\Opencv-module-build\OpencvBuild\Opencv\Include\opencv2 -IE:\liqi\my_project\Opencv-module-build\OpencvBuild\Opencv\Include\modules\core -IE:\liqi\my_project\Opencv-module-build\OpencvBuild\Opencv\Opencv\3rdparty\include\opencl\1.2 -IC:\Qt\Qt5.7.0\5.7\mingw53_32\include -IC:\Qt\Qt5.7.0\5.7\mingw53_32\include\QtGui -IC:\Qt\Qt5.7.0\5.7\mingw53_32\include\QtANGLE -IC:\Qt\Qt5.7.0\5.7\mingw53_32\include\QtCore -Idebug -IC:\Qt\Qt5.7.0\5.7\mingw53_32\mkspecs\win32-g++ 
+INCPATH       = -IE:\liqi\my_project\Opencv-module-build\OpencvBuild\Opencv\Opencv\core -I. -IE:\liqi\my_project\Opencv-module-build\OpencvBuild\Opencv\Opencv\core\include -IE:\liqi\my_project\Opencv-module-build\OpencvBuild\Opencv\Opencv\core\include\opencv2 -IE:\liqi\my_project\Opencv-module-build\OpencvBuild\Opencv\Opencv\3rdparty\include\opencl\1.2 -IC:\Qt\Qt5.7.0\5.7\mingw53_32\include -IC:\Qt\Qt5.7.0\5.7\mingw53_32\include\QtGui -IC:\Qt\Qt5.7.0\5.7\mingw53_32\include\QtANGLE -IC:\Qt\Qt5.7.0\5.7\mingw53_32\include\QtCore -Idebug -IC:\Qt\Qt5.7.0\5.7\mingw53_32\mkspecs\win32-g++ 
 LIB        =        ar -rc
 QMAKE         = C:\Qt\Qt5.7.0\5.7\mingw53_32\bin\qmake.exe
 IDC           = idc
@@ -242,7 +242,7 @@ compiler_clean:
 
 debug/algorithm.o: E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/algorithm.cpp E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/precomp.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/opencv_modules.hpp \
-		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Include/opencv2/cvconfig.h \
+		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/cvconfig.h \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/core/utility.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/core.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/core/cvdef.h \
@@ -286,12 +286,12 @@ debug/algorithm.o: E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Ope
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/arithm_core.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/arithm_simd.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/hal_replacement.hpp \
-		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Include/custom_hal.hpp
+		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/custom_hal.hpp
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\algorithm.o E:\liqi\my_project\Opencv-module-build\OpencvBuild\Opencv\Opencv\core\src\algorithm.cpp
 
 debug/alloc.o: E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/alloc.cpp E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/precomp.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/opencv_modules.hpp \
-		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Include/opencv2/cvconfig.h \
+		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/cvconfig.h \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/core/utility.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/core.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/core/cvdef.h \
@@ -335,12 +335,12 @@ debug/alloc.o: E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/arithm_core.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/arithm_simd.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/hal_replacement.hpp \
-		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Include/custom_hal.hpp
+		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/custom_hal.hpp
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\alloc.o E:\liqi\my_project\Opencv-module-build\OpencvBuild\Opencv\Opencv\core\src\alloc.cpp
 
 debug/arithm.o: E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/arithm.cpp E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/precomp.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/opencv_modules.hpp \
-		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Include/opencv2/cvconfig.h \
+		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/cvconfig.h \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/core/utility.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/core.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/core/cvdef.h \
@@ -384,15 +384,15 @@ debug/arithm.o: E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/arithm_core.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/arithm_simd.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/hal_replacement.hpp \
-		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Include/custom_hal.hpp \
-		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Include/modules/core/opencl_kernels_core.hpp \
+		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/custom_hal.hpp \
+		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/opencl_kernels_core.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/core/ocl_genbase.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/core/opencl/ocl_defs.hpp
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\arithm.o E:\liqi\my_project\Opencv-module-build\OpencvBuild\Opencv\Opencv\core\src\arithm.cpp
 
 debug/array.o: E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/array.cpp E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/precomp.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/opencv_modules.hpp \
-		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Include/opencv2/cvconfig.h \
+		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/cvconfig.h \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/core/utility.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/core.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/core/cvdef.h \
@@ -436,12 +436,12 @@ debug/array.o: E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/arithm_core.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/arithm_simd.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/hal_replacement.hpp \
-		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Include/custom_hal.hpp
+		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/custom_hal.hpp
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\array.o E:\liqi\my_project\Opencv-module-build\OpencvBuild\Opencv\Opencv\core\src\array.cpp
 
 debug/command_line_parser.o: E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/command_line_parser.cpp E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/precomp.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/opencv_modules.hpp \
-		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Include/opencv2/cvconfig.h \
+		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/cvconfig.h \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/core/utility.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/core.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/core/cvdef.h \
@@ -485,12 +485,12 @@ debug/command_line_parser.o: E:/liqi/my_project/Opencv-module-build/OpencvBuild/
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/arithm_core.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/arithm_simd.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/hal_replacement.hpp \
-		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Include/custom_hal.hpp
+		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/custom_hal.hpp
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\command_line_parser.o E:\liqi\my_project\Opencv-module-build\OpencvBuild\Opencv\Opencv\core\src\command_line_parser.cpp
 
 debug/conjugate_gradient.o: E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/conjugate_gradient.cpp E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/precomp.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/opencv_modules.hpp \
-		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Include/opencv2/cvconfig.h \
+		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/cvconfig.h \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/core/utility.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/core.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/core/cvdef.h \
@@ -534,12 +534,12 @@ debug/conjugate_gradient.o: E:/liqi/my_project/Opencv-module-build/OpencvBuild/O
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/arithm_core.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/arithm_simd.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/hal_replacement.hpp \
-		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Include/custom_hal.hpp
+		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/custom_hal.hpp
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\conjugate_gradient.o E:\liqi\my_project\Opencv-module-build\OpencvBuild\Opencv\Opencv\core\src\conjugate_gradient.cpp
 
 debug/convert.o: E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/convert.cpp E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/precomp.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/opencv_modules.hpp \
-		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Include/opencv2/cvconfig.h \
+		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/cvconfig.h \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/core/utility.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/core.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/core/cvdef.h \
@@ -583,15 +583,15 @@ debug/convert.o: E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Openc
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/arithm_core.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/arithm_simd.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/hal_replacement.hpp \
-		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Include/custom_hal.hpp \
-		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Include/modules/core/opencl_kernels_core.hpp \
+		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/custom_hal.hpp \
+		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/opencl_kernels_core.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/core/ocl_genbase.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/core/opencl/ocl_defs.hpp
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\convert.o E:\liqi\my_project\Opencv-module-build\OpencvBuild\Opencv\Opencv\core\src\convert.cpp
 
 debug/copy.o: E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/copy.cpp E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/precomp.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/opencv_modules.hpp \
-		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Include/opencv2/cvconfig.h \
+		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/cvconfig.h \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/core/utility.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/core.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/core/cvdef.h \
@@ -635,15 +635,15 @@ debug/copy.o: E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/c
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/arithm_core.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/arithm_simd.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/hal_replacement.hpp \
-		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Include/custom_hal.hpp \
-		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Include/modules/core/opencl_kernels_core.hpp \
+		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/custom_hal.hpp \
+		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/opencl_kernels_core.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/core/ocl_genbase.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/core/opencl/ocl_defs.hpp
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\copy.o E:\liqi\my_project\Opencv-module-build\OpencvBuild\Opencv\Opencv\core\src\copy.cpp
 
 debug/cuda_gpu_mat.o: E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/cuda_gpu_mat.cpp E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/precomp.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/opencv_modules.hpp \
-		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Include/opencv2/cvconfig.h \
+		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/cvconfig.h \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/core/utility.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/core.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/core/cvdef.h \
@@ -687,12 +687,12 @@ debug/cuda_gpu_mat.o: E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/arithm_core.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/arithm_simd.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/hal_replacement.hpp \
-		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Include/custom_hal.hpp
+		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/custom_hal.hpp
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\cuda_gpu_mat.o E:\liqi\my_project\Opencv-module-build\OpencvBuild\Opencv\Opencv\core\src\cuda_gpu_mat.cpp
 
 debug/cuda_host_mem.o: E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/cuda_host_mem.cpp E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/precomp.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/opencv_modules.hpp \
-		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Include/opencv2/cvconfig.h \
+		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/cvconfig.h \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/core/utility.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/core.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/core/cvdef.h \
@@ -736,12 +736,12 @@ debug/cuda_host_mem.o: E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/arithm_core.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/arithm_simd.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/hal_replacement.hpp \
-		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Include/custom_hal.hpp
+		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/custom_hal.hpp
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\cuda_host_mem.o E:\liqi\my_project\Opencv-module-build\OpencvBuild\Opencv\Opencv\core\src\cuda_host_mem.cpp
 
 debug/cuda_info.o: E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/cuda_info.cpp E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/precomp.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/opencv_modules.hpp \
-		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Include/opencv2/cvconfig.h \
+		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/cvconfig.h \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/core/utility.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/core.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/core/cvdef.h \
@@ -785,12 +785,12 @@ debug/cuda_info.o: E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Ope
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/arithm_core.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/arithm_simd.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/hal_replacement.hpp \
-		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Include/custom_hal.hpp
+		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/custom_hal.hpp
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\cuda_info.o E:\liqi\my_project\Opencv-module-build\OpencvBuild\Opencv\Opencv\core\src\cuda_info.cpp
 
 debug/cuda_stream.o: E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/cuda_stream.cpp E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/precomp.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/opencv_modules.hpp \
-		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Include/opencv2/cvconfig.h \
+		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/cvconfig.h \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/core/utility.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/core.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/core/cvdef.h \
@@ -834,12 +834,12 @@ debug/cuda_stream.o: E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/O
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/arithm_core.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/arithm_simd.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/hal_replacement.hpp \
-		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Include/custom_hal.hpp
+		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/custom_hal.hpp
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\cuda_stream.o E:\liqi\my_project\Opencv-module-build\OpencvBuild\Opencv\Opencv\core\src\cuda_stream.cpp
 
 debug/datastructs.o: E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/datastructs.cpp E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/precomp.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/opencv_modules.hpp \
-		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Include/opencv2/cvconfig.h \
+		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/cvconfig.h \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/core/utility.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/core.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/core/cvdef.h \
@@ -883,12 +883,12 @@ debug/datastructs.o: E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/O
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/arithm_core.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/arithm_simd.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/hal_replacement.hpp \
-		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Include/custom_hal.hpp
+		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/custom_hal.hpp
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\datastructs.o E:\liqi\my_project\Opencv-module-build\OpencvBuild\Opencv\Opencv\core\src\datastructs.cpp
 
 debug/directx.o: E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/directx.cpp E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/precomp.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/opencv_modules.hpp \
-		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Include/opencv2/cvconfig.h \
+		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/cvconfig.h \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/core/utility.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/core.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/core/cvdef.h \
@@ -932,9 +932,9 @@ debug/directx.o: E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Openc
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/arithm_core.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/arithm_simd.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/hal_replacement.hpp \
-		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Include/custom_hal.hpp \
+		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/custom_hal.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/core/directx.hpp \
-		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Include/modules/core/opencl_kernels_core.hpp \
+		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/opencl_kernels_core.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/core/ocl_genbase.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/core/opencl/ocl_defs.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/directx.inc.hpp \
@@ -949,7 +949,7 @@ debug/directx.o: E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Openc
 
 debug/downhill_simplex.o: E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/downhill_simplex.cpp E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/precomp.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/opencv_modules.hpp \
-		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Include/opencv2/cvconfig.h \
+		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/cvconfig.h \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/core/utility.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/core.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/core/cvdef.h \
@@ -993,12 +993,12 @@ debug/downhill_simplex.o: E:/liqi/my_project/Opencv-module-build/OpencvBuild/Ope
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/arithm_core.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/arithm_simd.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/hal_replacement.hpp \
-		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Include/custom_hal.hpp
+		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/custom_hal.hpp
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\downhill_simplex.o E:\liqi\my_project\Opencv-module-build\OpencvBuild\Opencv\Opencv\core\src\downhill_simplex.cpp
 
 debug/dxt.o: E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/dxt.cpp E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/precomp.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/opencv_modules.hpp \
-		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Include/opencv2/cvconfig.h \
+		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/cvconfig.h \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/core/utility.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/core.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/core/cvdef.h \
@@ -1042,21 +1042,21 @@ debug/dxt.o: E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/co
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/arithm_core.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/arithm_simd.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/hal_replacement.hpp \
-		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Include/custom_hal.hpp \
+		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/custom_hal.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/core/opencl/runtime/opencl_clamdfft.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/core/opencl/runtime/autogenerated/opencl_clamdfft.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/core/opencl/runtime/opencl_core.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/3rdparty/include/opencl/1.2/CL/cl.h \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/3rdparty/include/opencl/1.2/CL/cl_platform.h \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/core/opencl/runtime/autogenerated/opencl_core.hpp \
-		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Include/modules/core/opencl_kernels_core.hpp \
+		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/opencl_kernels_core.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/core/ocl_genbase.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/core/opencl/ocl_defs.hpp
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\dxt.o E:\liqi\my_project\Opencv-module-build\OpencvBuild\Opencv\Opencv\core\src\dxt.cpp
 
 debug/gl_core_3_1.o: E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/gl_core_3_1.cpp E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/precomp.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/opencv_modules.hpp \
-		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Include/opencv2/cvconfig.h \
+		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/cvconfig.h \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/core/utility.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/core.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/core/cvdef.h \
@@ -1100,13 +1100,13 @@ debug/gl_core_3_1.o: E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/O
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/arithm_core.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/arithm_simd.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/hal_replacement.hpp \
-		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Include/custom_hal.hpp \
+		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/custom_hal.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/gl_core_3_1.hpp
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\gl_core_3_1.o E:\liqi\my_project\Opencv-module-build\OpencvBuild\Opencv\Opencv\core\src\gl_core_3_1.cpp
 
 debug/glob.o: E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/glob.cpp E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/precomp.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/opencv_modules.hpp \
-		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Include/opencv2/cvconfig.h \
+		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/cvconfig.h \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/core/utility.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/core.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/core/cvdef.h \
@@ -1150,13 +1150,13 @@ debug/glob.o: E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/c
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/arithm_core.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/arithm_simd.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/hal_replacement.hpp \
-		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Include/custom_hal.hpp \
+		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/custom_hal.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/codedef.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\glob.o E:\liqi\my_project\Opencv-module-build\OpencvBuild\Opencv\Opencv\core\src\glob.cpp
 
 debug/kmeans.o: E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/kmeans.cpp E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/precomp.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/opencv_modules.hpp \
-		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Include/opencv2/cvconfig.h \
+		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/cvconfig.h \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/core/utility.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/core.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/core/cvdef.h \
@@ -1200,12 +1200,12 @@ debug/kmeans.o: E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/arithm_core.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/arithm_simd.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/hal_replacement.hpp \
-		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Include/custom_hal.hpp
+		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/custom_hal.hpp
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\kmeans.o E:\liqi\my_project\Opencv-module-build\OpencvBuild\Opencv\Opencv\core\src\kmeans.cpp
 
 debug/lapack.o: E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/lapack.cpp E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/precomp.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/opencv_modules.hpp \
-		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Include/opencv2/cvconfig.h \
+		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/cvconfig.h \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/core/utility.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/core.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/core/cvdef.h \
@@ -1249,12 +1249,12 @@ debug/lapack.o: E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/arithm_core.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/arithm_simd.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/hal_replacement.hpp \
-		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Include/custom_hal.hpp
+		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/custom_hal.hpp
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\lapack.o E:\liqi\my_project\Opencv-module-build\OpencvBuild\Opencv\Opencv\core\src\lapack.cpp
 
 debug/lda.o: E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/lda.cpp E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/precomp.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/opencv_modules.hpp \
-		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Include/opencv2/cvconfig.h \
+		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/cvconfig.h \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/core/utility.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/core.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/core/cvdef.h \
@@ -1298,12 +1298,12 @@ debug/lda.o: E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/co
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/arithm_core.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/arithm_simd.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/hal_replacement.hpp \
-		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Include/custom_hal.hpp
+		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/custom_hal.hpp
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\lda.o E:\liqi\my_project\Opencv-module-build\OpencvBuild\Opencv\Opencv\core\src\lda.cpp
 
 debug/lpsolver.o: E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/lpsolver.cpp E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/precomp.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/opencv_modules.hpp \
-		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Include/opencv2/cvconfig.h \
+		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/cvconfig.h \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/core/utility.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/core.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/core/cvdef.h \
@@ -1347,12 +1347,12 @@ debug/lpsolver.o: E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Open
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/arithm_core.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/arithm_simd.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/hal_replacement.hpp \
-		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Include/custom_hal.hpp
+		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/custom_hal.hpp
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\lpsolver.o E:\liqi\my_project\Opencv-module-build\OpencvBuild\Opencv\Opencv\core\src\lpsolver.cpp
 
 debug/mathfuncs.o: E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/mathfuncs.cpp E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/precomp.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/opencv_modules.hpp \
-		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Include/opencv2/cvconfig.h \
+		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/cvconfig.h \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/core/utility.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/core.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/core/cvdef.h \
@@ -1396,15 +1396,15 @@ debug/mathfuncs.o: E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Ope
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/arithm_core.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/arithm_simd.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/hal_replacement.hpp \
-		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Include/custom_hal.hpp \
-		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Include/modules/core/opencl_kernels_core.hpp \
+		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/custom_hal.hpp \
+		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/opencl_kernels_core.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/core/ocl_genbase.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/core/opencl/ocl_defs.hpp
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\mathfuncs.o E:\liqi\my_project\Opencv-module-build\OpencvBuild\Opencv\Opencv\core\src\mathfuncs.cpp
 
 debug/mathfuncs_core.o: E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/mathfuncs_core.cpp E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/precomp.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/opencv_modules.hpp \
-		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Include/opencv2/cvconfig.h \
+		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/cvconfig.h \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/core/utility.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/core.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/core/cvdef.h \
@@ -1448,12 +1448,12 @@ debug/mathfuncs_core.o: E:/liqi/my_project/Opencv-module-build/OpencvBuild/Openc
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/arithm_core.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/arithm_simd.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/hal_replacement.hpp \
-		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Include/custom_hal.hpp
+		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/custom_hal.hpp
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\mathfuncs_core.o E:\liqi\my_project\Opencv-module-build\OpencvBuild\Opencv\Opencv\core\src\mathfuncs_core.cpp
 
 debug/matmul.o: E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/matmul.cpp E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/precomp.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/opencv_modules.hpp \
-		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Include/opencv2/cvconfig.h \
+		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/cvconfig.h \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/core/utility.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/core.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/core/cvdef.h \
@@ -1497,8 +1497,8 @@ debug/matmul.o: E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/arithm_core.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/arithm_simd.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/hal_replacement.hpp \
-		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Include/custom_hal.hpp \
-		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Include/modules/core/opencl_kernels_core.hpp \
+		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/custom_hal.hpp \
+		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/opencl_kernels_core.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/core/ocl_genbase.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/core/opencl/ocl_defs.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/core/opencl/runtime/opencl_clamdblas.hpp \
@@ -1507,7 +1507,7 @@ debug/matmul.o: E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv
 
 debug/matop.o: E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/matop.cpp E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/precomp.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/opencv_modules.hpp \
-		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Include/opencv2/cvconfig.h \
+		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/cvconfig.h \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/core/utility.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/core.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/core/cvdef.h \
@@ -1551,12 +1551,12 @@ debug/matop.o: E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/arithm_core.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/arithm_simd.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/hal_replacement.hpp \
-		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Include/custom_hal.hpp
+		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/custom_hal.hpp
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\matop.o E:\liqi\my_project\Opencv-module-build\OpencvBuild\Opencv\Opencv\core\src\matop.cpp
 
 debug/matrix.o: E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/matrix.cpp E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/precomp.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/opencv_modules.hpp \
-		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Include/opencv2/cvconfig.h \
+		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/cvconfig.h \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/core/utility.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/core.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/core/cvdef.h \
@@ -1600,8 +1600,8 @@ debug/matrix.o: E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/arithm_core.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/arithm_simd.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/hal_replacement.hpp \
-		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Include/custom_hal.hpp \
-		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Include/modules/core/opencl_kernels_core.hpp \
+		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/custom_hal.hpp \
+		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/opencl_kernels_core.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/core/ocl_genbase.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/core/opencl/ocl_defs.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/bufferpool.impl.hpp
@@ -1609,7 +1609,7 @@ debug/matrix.o: E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv
 
 debug/matrix_decomp.o: E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/matrix_decomp.cpp E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/precomp.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/opencv_modules.hpp \
-		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Include/opencv2/cvconfig.h \
+		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/cvconfig.h \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/core/utility.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/core.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/core/cvdef.h \
@@ -1653,12 +1653,12 @@ debug/matrix_decomp.o: E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/arithm_core.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/arithm_simd.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/hal_replacement.hpp \
-		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Include/custom_hal.hpp
+		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/custom_hal.hpp
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\matrix_decomp.o E:\liqi\my_project\Opencv-module-build\OpencvBuild\Opencv\Opencv\core\src\matrix_decomp.cpp
 
 debug/merge.o: E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/merge.cpp E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/precomp.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/opencv_modules.hpp \
-		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Include/opencv2/cvconfig.h \
+		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/cvconfig.h \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/core/utility.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/core.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/core/cvdef.h \
@@ -1702,12 +1702,12 @@ debug/merge.o: E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/arithm_core.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/arithm_simd.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/hal_replacement.hpp \
-		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Include/custom_hal.hpp
+		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/custom_hal.hpp
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\merge.o E:\liqi\my_project\Opencv-module-build\OpencvBuild\Opencv\Opencv\core\src\merge.cpp
 
 debug/ocl.o: E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/ocl.cpp E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/precomp.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/opencv_modules.hpp \
-		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Include/opencv2/cvconfig.h \
+		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/cvconfig.h \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/core/utility.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/core.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/core/cvdef.h \
@@ -1751,7 +1751,7 @@ debug/ocl.o: E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/co
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/arithm_core.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/arithm_simd.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/hal_replacement.hpp \
-		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Include/custom_hal.hpp \
+		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/custom_hal.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/core/opencl/runtime/opencl_clamdblas.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/core/opencl/runtime/autogenerated/opencl_clamdblas.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/core/opencl/runtime/opencl_clamdfft.hpp \
@@ -1772,7 +1772,7 @@ debug/ocl.o: E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/co
 
 debug/opengl.o: E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/opengl.cpp E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/precomp.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/opencv_modules.hpp \
-		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Include/opencv2/cvconfig.h \
+		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/cvconfig.h \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/core/utility.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/core.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/core/cvdef.h \
@@ -1816,7 +1816,7 @@ debug/opengl.o: E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/arithm_core.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/arithm_simd.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/hal_replacement.hpp \
-		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Include/custom_hal.hpp \
+		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/custom_hal.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/gl_core_3_1.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/core/opencl/runtime/opencl_gl.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/core/opencl/runtime/opencl_core.hpp \
@@ -1832,7 +1832,7 @@ debug/opengl.o: E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv
 
 debug/out.o: E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/out.cpp E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/precomp.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/opencv_modules.hpp \
-		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Include/opencv2/cvconfig.h \
+		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/cvconfig.h \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/core/utility.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/core.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/core/cvdef.h \
@@ -1876,12 +1876,12 @@ debug/out.o: E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/co
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/arithm_core.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/arithm_simd.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/hal_replacement.hpp \
-		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Include/custom_hal.hpp
+		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/custom_hal.hpp
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\out.o E:\liqi\my_project\Opencv-module-build\OpencvBuild\Opencv\Opencv\core\src\out.cpp
 
 debug/parallel.o: E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/parallel.cpp E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/precomp.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/opencv_modules.hpp \
-		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Include/opencv2/cvconfig.h \
+		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/cvconfig.h \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/core/utility.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/core.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/core/cvdef.h \
@@ -1925,12 +1925,12 @@ debug/parallel.o: E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Open
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/arithm_core.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/arithm_simd.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/hal_replacement.hpp \
-		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Include/custom_hal.hpp
+		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/custom_hal.hpp
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\parallel.o E:\liqi\my_project\Opencv-module-build\OpencvBuild\Opencv\Opencv\core\src\parallel.cpp
 
 debug/parallel_pthreads.o: E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/parallel_pthreads.cpp E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/precomp.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/opencv_modules.hpp \
-		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Include/opencv2/cvconfig.h \
+		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/cvconfig.h \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/core/utility.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/core.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/core/cvdef.h \
@@ -1974,12 +1974,12 @@ debug/parallel_pthreads.o: E:/liqi/my_project/Opencv-module-build/OpencvBuild/Op
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/arithm_core.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/arithm_simd.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/hal_replacement.hpp \
-		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Include/custom_hal.hpp
+		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/custom_hal.hpp
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\parallel_pthreads.o E:\liqi\my_project\Opencv-module-build\OpencvBuild\Opencv\Opencv\core\src\parallel_pthreads.cpp
 
 debug/pca.o: E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/pca.cpp E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/precomp.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/opencv_modules.hpp \
-		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Include/opencv2/cvconfig.h \
+		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/cvconfig.h \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/core/utility.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/core.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/core/cvdef.h \
@@ -2023,12 +2023,12 @@ debug/pca.o: E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/co
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/arithm_core.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/arithm_simd.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/hal_replacement.hpp \
-		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Include/custom_hal.hpp
+		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/custom_hal.hpp
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\pca.o E:\liqi\my_project\Opencv-module-build\OpencvBuild\Opencv\Opencv\core\src\pca.cpp
 
 debug/persistence.o: E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/persistence.cpp E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/precomp.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/opencv_modules.hpp \
-		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Include/opencv2/cvconfig.h \
+		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/cvconfig.h \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/core/utility.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/core.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/core/cvdef.h \
@@ -2072,12 +2072,12 @@ debug/persistence.o: E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/O
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/arithm_core.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/arithm_simd.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/hal_replacement.hpp \
-		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Include/custom_hal.hpp
+		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/custom_hal.hpp
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\persistence.o E:\liqi\my_project\Opencv-module-build\OpencvBuild\Opencv\Opencv\core\src\persistence.cpp
 
 debug/rand.o: E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/rand.cpp E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/precomp.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/opencv_modules.hpp \
-		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Include/opencv2/cvconfig.h \
+		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/cvconfig.h \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/core/utility.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/core.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/core/cvdef.h \
@@ -2121,12 +2121,12 @@ debug/rand.o: E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/c
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/arithm_core.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/arithm_simd.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/hal_replacement.hpp \
-		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Include/custom_hal.hpp
+		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/custom_hal.hpp
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\rand.o E:\liqi\my_project\Opencv-module-build\OpencvBuild\Opencv\Opencv\core\src\rand.cpp
 
 debug/split.o: E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/split.cpp E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/precomp.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/opencv_modules.hpp \
-		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Include/opencv2/cvconfig.h \
+		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/cvconfig.h \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/core/utility.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/core.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/core/cvdef.h \
@@ -2170,12 +2170,12 @@ debug/split.o: E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/arithm_core.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/arithm_simd.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/hal_replacement.hpp \
-		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Include/custom_hal.hpp
+		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/custom_hal.hpp
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\split.o E:\liqi\my_project\Opencv-module-build\OpencvBuild\Opencv\Opencv\core\src\split.cpp
 
 debug/stat.o: E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/stat.cpp E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/precomp.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/opencv_modules.hpp \
-		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Include/opencv2/cvconfig.h \
+		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/cvconfig.h \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/core/utility.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/core.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/core/cvdef.h \
@@ -2219,15 +2219,15 @@ debug/stat.o: E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/c
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/arithm_core.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/arithm_simd.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/hal_replacement.hpp \
-		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Include/custom_hal.hpp \
-		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Include/modules/core/opencl_kernels_core.hpp \
+		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/custom_hal.hpp \
+		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/opencl_kernels_core.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/core/ocl_genbase.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/core/opencl/ocl_defs.hpp
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\stat.o E:\liqi\my_project\Opencv-module-build\OpencvBuild\Opencv\Opencv\core\src\stat.cpp
 
 debug/stl.o: E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/stl.cpp E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/precomp.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/opencv_modules.hpp \
-		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Include/opencv2/cvconfig.h \
+		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/cvconfig.h \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/core/utility.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/core.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/core/cvdef.h \
@@ -2271,12 +2271,12 @@ debug/stl.o: E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/co
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/arithm_core.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/arithm_simd.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/hal_replacement.hpp \
-		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Include/custom_hal.hpp
+		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/custom_hal.hpp
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\stl.o E:\liqi\my_project\Opencv-module-build\OpencvBuild\Opencv\Opencv\core\src\stl.cpp
 
 debug/system.o: E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/system.cpp E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/precomp.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/opencv_modules.hpp \
-		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Include/opencv2/cvconfig.h \
+		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/cvconfig.h \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/core/utility.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/core.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/core/cvdef.h \
@@ -2320,13 +2320,13 @@ debug/system.o: E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/arithm_core.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/arithm_simd.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/hal_replacement.hpp \
-		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Include/custom_hal.hpp \
-		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Include/modules/core/version_string.inc
+		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/custom_hal.hpp \
+		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/version_string.inc
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\system.o E:\liqi\my_project\Opencv-module-build\OpencvBuild\Opencv\Opencv\core\src\system.cpp
 
 debug/tables.o: E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/tables.cpp E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/precomp.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/opencv_modules.hpp \
-		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Include/opencv2/cvconfig.h \
+		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/cvconfig.h \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/core/utility.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/core.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/core/cvdef.h \
@@ -2370,12 +2370,12 @@ debug/tables.o: E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/arithm_core.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/arithm_simd.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/hal_replacement.hpp \
-		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Include/custom_hal.hpp
+		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/custom_hal.hpp
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\tables.o E:\liqi\my_project\Opencv-module-build\OpencvBuild\Opencv\Opencv\core\src\tables.cpp
 
 debug/types.o: E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/types.cpp E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/precomp.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/opencv_modules.hpp \
-		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Include/opencv2/cvconfig.h \
+		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/cvconfig.h \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/core/utility.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/core.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/core/cvdef.h \
@@ -2419,12 +2419,12 @@ debug/types.o: E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/arithm_core.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/arithm_simd.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/hal_replacement.hpp \
-		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Include/custom_hal.hpp
+		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/custom_hal.hpp
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\types.o E:\liqi\my_project\Opencv-module-build\OpencvBuild\Opencv\Opencv\core\src\types.cpp
 
 debug/umatrix.o: E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/umatrix.cpp E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/precomp.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/opencv_modules.hpp \
-		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Include/opencv2/cvconfig.h \
+		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/cvconfig.h \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/core/utility.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/core.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/core/cvdef.h \
@@ -2468,15 +2468,15 @@ debug/umatrix.o: E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Openc
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/arithm_core.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/arithm_simd.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/hal_replacement.hpp \
-		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Include/custom_hal.hpp \
-		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Include/modules/core/opencl_kernels_core.hpp \
+		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/custom_hal.hpp \
+		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/opencl_kernels_core.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/core/ocl_genbase.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/core/opencl/ocl_defs.hpp
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\umatrix.o E:\liqi\my_project\Opencv-module-build\OpencvBuild\Opencv\Opencv\core\src\umatrix.cpp
 
 debug/va_intel.o: E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/va_intel.cpp E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/precomp.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/opencv_modules.hpp \
-		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Include/opencv2/cvconfig.h \
+		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/cvconfig.h \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/core/utility.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/core.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/core/cvdef.h \
@@ -2520,12 +2520,12 @@ debug/va_intel.o: E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Open
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/arithm_core.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/arithm_simd.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/hal_replacement.hpp \
-		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Include/custom_hal.hpp \
+		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/custom_hal.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/core/opencl/runtime/opencl_core.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/3rdparty/include/opencl/1.2/CL/cl.h \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/3rdparty/include/opencl/1.2/CL/cl_platform.h \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/core/opencl/runtime/autogenerated/opencl_core.hpp \
-		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Include/modules/core/opencl_kernels_core.hpp \
+		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/src/opencl_kernels_core.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/core/ocl_genbase.hpp \
 		E:/liqi/my_project/Opencv-module-build/OpencvBuild/Opencv/Opencv/core/include/opencv2/core/opencl/ocl_defs.hpp
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\va_intel.o E:\liqi\my_project\Opencv-module-build\OpencvBuild\Opencv\Opencv\core\src\va_intel.cpp

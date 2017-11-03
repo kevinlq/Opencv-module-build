@@ -150,7 +150,7 @@ CONFIG += staticlib
 CONFIG += plugin
 
 #QMAKE_LFLAGS += -static-libgcc
-QMAKE_LFLAGS += --disable-sjlj-exceptions
+QMAKE_LFLAGS += -frtti -fexceptions
 
 CONFIG(staticlib, staticlib):{
         DIR_DEPEND_DEST = $$PWD/../Lib/$${DIR_PLATFORM}/$${DIR_COMPILER}/$${DIR_COMPILEMODE}

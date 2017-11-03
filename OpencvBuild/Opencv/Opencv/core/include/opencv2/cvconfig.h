@@ -1,5 +1,5 @@
 /* OpenCV compiled as static or dynamic libs */
-#define BUILD_SHARED_LIBS
+//#define BUILD_SHARED_LIBS
 
 /* Compile for 'real' NVIDIA GPU architectures */
 #define CUDA_ARCH_BIN ""
