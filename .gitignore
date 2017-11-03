@@ -20,7 +20,7 @@
 *.user
 *.save
 
-
+Bin/
 tempFiles/
 *.a
 *.dll
