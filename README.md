@@ -8,18 +8,28 @@ QQ      :2313828706
 Oschina :http://git.oschina.net/kevinlq0912   
 GitHub  :https://github.com/kevinlq 
 
+## 全部编译
 
-本次只编译`core`和`imgproc`两大模块
+因为opencv模块比较多，如今3.3版本包含的更多了。模块化带了的好处就是我们可以自己编译需要的模块，
+这个和Qt刚好类似，给我们开发者带来了极大的好处和方便。
+
+### MinGW版本
+
+提前安装好Qt,CMake，以及opencv源码
+
+使用CMake-gui将opencv的cmake工程转化成makefile，然后使用MinGW进行编译，最后安装。ok.
+
+## 编译`core`和`imgproc`两大模块
 
 - `core`模块不依赖任何模块
 - `imgproc`模块依赖`core`模块
 
 编译成静态库和静态库
 
-## windows平台
+### windows平台
 使用`MinGW`工具链进行编译
 
-### 错误
+#### 错误
 - 找不到 `opencl_kernels_imgproc.hpp`
 
 ![](/OpencvBuild/screen/opencl_kernels_imgproc.hpp-norFind.png)
@@ -34,7 +44,7 @@ GitHub  :https://github.com/kevinlq
 仔细想应该是编译中某些开关设置没有打开或关闭吧。
 
 
-## android平台
+### android平台
 
 
-## ios平台
+### ios平台
