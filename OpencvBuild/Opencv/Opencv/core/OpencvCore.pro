@@ -12,10 +12,13 @@ INCLUDEPATH +=$$PWD/include/opencv2
 
 # 3rdparty file
 INCLUDEPATH +=$$PWD/../3rdparty/include/opencl/1.2
-#include zlib
-LIBS    +=$$PWD/../../Lib/$${DIR_PLATFORM}/$${DIR_COMPILER}/$${DIR_COMPILEMODE}/ -lzlib$${FILE_POSTFIX}
+#DEPENDPATH  +=$$PWD/../zlib
+INCLUDEPATH +=$$PWD/../3rdparty/zlib
 
-INCLUDEPATH +=$${ZLIB_PATH}
+ZLIB_PATH =$$PWD/../../Lib/$${DIR_PLATFORM}/$${DIR_COMPILER}/$${DIR_COMPILEMODE}/-lzlib$${FILE_POSTFIX}
+
+LIBS += -L$$ZLIB_PATH
+
 
 
 DEFINES += __OPENCV_BUILD
@@ -76,6 +79,6 @@ SOURCES += \
     src/types.cpp \
     src/umatrix.cpp \
     src/va_intel.cpp
-#    opencl_kernels_core.cpp
 
 
+message ($$ZLIB_PATH)

@@ -171,6 +171,15 @@ ImgProc:Release:3.74M;Debug:22.3M
 
 ![](/OpencvBuild/screen/zlib_error2.png)
 
+- 编译zlib库
+
+此时需要下载第三方的zlib库.
+
+>网上查找说是opencv使用自带的zlib会和开发过程中使用的zlib冲突，最好都使用第三方的库.
+
+zlib库很好编译，直接添加到Qt子工程中即可，设置目标target和templete。
+
+
 ### android平台
 
 

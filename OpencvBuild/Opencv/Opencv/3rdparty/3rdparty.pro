@@ -1,3 +1,10 @@
-include ($$PWD/3rdparty.pri)
+TEMPLATE = subdirs
 
-INCLUDEPATH +=$$PWD/include/
+SUBDIRS += \
+    $$PWD/zlib/OpencvZlib.pro \
+    $$PWD/libpng/OpencvLibPng.pro \
+    $$PWD/libjpeg/OpencvLibJpeg.pro \
+    $$PWD/libtiff/OpencvLibTiff.pro \
+    $$PWD/libjasper/OpencvLibJasper.pro
+
+CONFIG  +=order

@@ -69,10 +69,10 @@
 /* #undef HAVE_EIGEN */
 
 /* FFMpeg video library */
-#define HAVE_FFMPEG
+//#define HAVE_FFMPEG
 
 /* ffmpeg's libswscale */
-#define HAVE_FFMPEG_SWSCALE
+//#define HAVE_FFMPEG_SWSCALE
 
 /* ffmpeg in Gentoo */
 #define HAVE_GENTOO_FFMPEG
