@@ -5,6 +5,7 @@
 
 #include "opencv2/core.hpp"
 #include "opencv2/imgproc.hpp"
+#include "opencv2/highgui.hpp"
 
 
 using namespace std;
@@ -12,6 +13,7 @@ using namespace cv;
 
 int main(int argc, char *argv[])
 {
+    QApplication app(argc,argv);
 
     Mat grayim(600, 800, CV_8UC1);
     Mat colorim(600, 800, CV_8UC3);
@@ -31,8 +33,8 @@ int main(int argc, char *argv[])
         (*colorit)[2] = rand()%255; //Red
     }
     //显示结果
-//    imshow("grayim", grayim);
-//    imshow("colorim", colorim);
-//    waitKey(0);
-    return 0;
+    imshow("grayim", grayim);
+    imshow("colorim", colorim);
+    waitKey(0);
+    return app.exec ();
 }
