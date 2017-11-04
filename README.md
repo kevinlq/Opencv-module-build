@@ -32,6 +32,9 @@ CMake:3.10.0-rc3-w64
 
 ## 编译`core`和`imgproc`两大模块
 
+[opencv模块裁剪](http://blog.csdn.net/10km/article/details/72972844)
+
+
 - `core`模块不依赖任何模块
 
 实际中发现需要添加`3rdparty/include/opencl/1.2/CL/cl.h`文件
@@ -99,6 +102,7 @@ INCLUDEPATH +=$$PWD/../build_file/imgproc
 Google解决:一个朋友说是直接删除掉....我注释掉了.
 ![](/OpencvBuild/screen/opencv_build_q.png)
 
+[解决方案地址](http://answers.opencv.org/question/79178/error-compiling-traincascade-in-opencv-30/)
 
 - 类型出现问题
 

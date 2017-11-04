@@ -6,7 +6,7 @@ TEMPLATE    = lib
 TARGET  = opencvCore$${FILE_POSTFIX}
 
 # 3rdparty file
-#INCLUDEPATH +=$$PWD/../3rdparty/include/opencl/1.2
+INCLUDEPATH +=$$PWD/../3rdparty/include/opencl/1.2
 INCLUDEPATH +=$$PWD/../3rdparty/zlib
 LIBS += -L$$PWD/../3rdparty/Lib/$${DIR_PLATFORM}/$${DIR_COMPILER}/$${DIR_COMPILEMODE}/ -lzlib$${FILE_POSTFIX}
 

@@ -124,6 +124,7 @@
 /* #undef HAVE_NVCUVID */
 
 /* OpenCL Support */
+//不编译OPENCL
 //#define HAVE_OPENCL
 /* #undef HAVE_OPENCL_STATIC */
 /* #undef HAVE_OPENCL_SVM */
