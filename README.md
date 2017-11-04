@@ -90,6 +90,11 @@ INCLUDEPATH +=$$PWD/../build_file/imgproc
 
 ![](/OpencvBuild/screen/cvconfig.png)
 
+- __OPENCV_BUILD问题
+
+```C++
+ error this is a private header which should not be used from outside of the OpenCV library
+```
 - 类型出现问题
 
 ```C++
@@ -178,6 +183,11 @@ ImgProc:Release:3.74M;Debug:22.3M
 >网上查找说是opencv使用自带的zlib会和开发过程中使用的zlib冲突，最好都使用第三方的库.
 
 zlib库很好编译，直接添加到Qt子工程中即可，设置目标target和templete。
+
+>很是奇怪的问题，zlibi已经编译成功了，而且已经添加到了core模块子工程配置中，但是最后程序链接时提示还是找不到某些zlib方法
+
+**解决方案**
+既然将zlib编译成静态库无法连接，那么就直接将zlib源码包含进来好了，和core模块一起编译算了，修改后终于编译成功了，最后连接成功了.
 
 
 ### android平台

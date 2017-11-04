@@ -15,7 +15,6 @@ INCLUDEPATH +=$$PWD/../../Include/modules/imgproc
 # imgproc file
 INCLUDEPATH +=$$PWD/include
 
-DEFINES +=__OPENCV_BUILD
 
 HEADERS += \
     src/_geom.h \

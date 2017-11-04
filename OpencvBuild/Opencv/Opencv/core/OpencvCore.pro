@@ -5,23 +5,47 @@ TEMPLATE    = lib
 
 TARGET  = opencvCore$${FILE_POSTFIX}
 
+# 3rdparty file
+#INCLUDEPATH +=$$PWD/../3rdparty/include/opencl/1.2
+INCLUDEPATH +=$$PWD/../3rdparty/zlib
+LIBS += -L$$PWD/../3rdparty/Lib/$${DIR_PLATFORM}/$${DIR_COMPILER}/$${DIR_COMPILEMODE}/ -lzlib$${FILE_POSTFIX}
+
+
 # include opencv core include
 INCLUDEPATH +=$$PWD/include
 INCLUDEPATH +=$$PWD/include/opencv2
 
+# this is zlib file
+HEADERS += \
+    $$PWD/../3rdparty/zlib/crc32.h \
+    $$PWD/../3rdparty/zlib/deflate.h \
+    $$PWD/../3rdparty/zlib/gzguts.h \
+    $$PWD/../3rdparty/zlib/inffast.h \
+    $$PWD/../3rdparty/zlib/inffixed.h \
+    $$PWD/../3rdparty/zlib/inflate.h \
+    $$PWD/../3rdparty/zlib/inftrees.h \
+    $$PWD/../3rdparty/zlib/trees.h \
+    $$PWD/../3rdparty/zlib/zlib.h \
+    $$PWD/../3rdparty/zlib/zutil.h \
+    $$PWD/../3rdparty/zlib/zconf.h
 
-# 3rdparty file
-INCLUDEPATH +=$$PWD/../3rdparty/include/opencl/1.2
-#DEPENDPATH  +=$$PWD/../zlib
-INCLUDEPATH +=$$PWD/../3rdparty/zlib
+SOURCES += \
+    $$PWD/../3rdparty/zlib/adler32.c \
+    $$PWD/../3rdparty/zlib/compress.c \
+    $$PWD/../3rdparty/zlib/crc32.c \
+    $$PWD/../3rdparty/zlib/deflate.c \
+    $$PWD/../3rdparty/zlib/gzclose.c \
+    $$PWD/../3rdparty/zlib/gzlib.c \
+    $$PWD/../3rdparty/zlib/gzread.c \
+    $$PWD/../3rdparty/zlib/gzwrite.c \
+    $$PWD/../3rdparty/zlib/infback.c \
+    $$PWD/../3rdparty/zlib/inffast.c \
+    $$PWD/../3rdparty/zlib/inflate.c \
+    $$PWD/../3rdparty/zlib/inftrees.c \
+    $$PWD/../3rdparty/zlib/trees.c \
+    $$PWD/../3rdparty/zlib/uncompr.c \
+    $$PWD/../3rdparty/zlib/zutil.c
 
-ZLIB_PATH =$$PWD/../../Lib/$${DIR_PLATFORM}/$${DIR_COMPILER}/$${DIR_COMPILEMODE}/-lzlib$${FILE_POSTFIX}
-
-LIBS += -L$$ZLIB_PATH
-
-
-
-DEFINES += __OPENCV_BUILD
 
 HEADERS += \
     src/arithm_core.hpp \
@@ -81,4 +105,4 @@ SOURCES += \
     src/va_intel.cpp
 
 
-message ($$ZLIB_PATH)
+message ($$QT_VERSION)

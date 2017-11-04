@@ -1,4 +1,5 @@
 /* OpenCV compiled as static or dynamic libs */
+//取消动态库编译，本次只编译静态库
 //#define BUILD_SHARED_LIBS
 
 /* Compile for 'real' NVIDIA GPU architectures */
@@ -72,9 +73,11 @@
 //#define HAVE_FFMPEG
 
 /* ffmpeg's libswscale */
+//取消ffmpeg相关的编译
 //#define HAVE_FFMPEG_SWSCALE
 
 /* ffmpeg in Gentoo */
+//取消ffmpeg相关的编译
 #define HAVE_GENTOO_FFMPEG
 
 /* Geospatial Data Abstraction Library */
@@ -194,3 +197,5 @@
 
 /* Intel VA-API/OpenCL */
 /* #undef HAVE_VA_INTEL */
+
+#define __OPENCV_BUILD
