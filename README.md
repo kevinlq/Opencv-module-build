@@ -165,6 +165,12 @@ ImgProc:Release:3.74M;Debug:22.3M
 
 需要添加zlib支持
 
+![](/OpencvBuild/screen/zlib_error.png)
+
+进到该函数中，可以看到，跑到了mingw32自带的zlib库中了。
+
+![](/OpencvBuild/screen/zlib_error2.png)
+
 ### android平台
 
 

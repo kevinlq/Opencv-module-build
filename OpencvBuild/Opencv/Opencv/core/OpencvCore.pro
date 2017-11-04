@@ -12,8 +12,8 @@ INCLUDEPATH +=$$PWD/include/opencv2
 
 # 3rdparty file
 INCLUDEPATH +=$$PWD/../3rdparty/include/opencl/1.2
-
-ZLIB_PATH =$$PWD/../zlib-1.2.11
+#include zlib
+LIBS    +=$$PWD/../../Lib/$${DIR_PLATFORM}/$${DIR_COMPILER}/$${DIR_COMPILEMODE}/ -lzlib$${FILE_POSTFIX}
 
 INCLUDEPATH +=$${ZLIB_PATH}
 
