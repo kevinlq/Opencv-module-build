@@ -95,6 +95,11 @@ INCLUDEPATH +=$$PWD/../build_file/imgproc
 ```C++
  error this is a private header which should not be used from outside of the OpenCV library
 ```
+**解决办法**
+Google解决:一个朋友说是直接删除掉....我注释掉了.
+![](/OpencvBuild/screen/opencv_build_q.png)
+
+
 - 类型出现问题
 
 ```C++
@@ -105,7 +110,7 @@ Opencv\core\src\glob.cpp:117: error: cannot convert 'WIN32_FIND_DATA*
 			 
 ```
 
-![](OpencvBuild/screen/wchar.png)
+![](/OpencvBuild/screen/wchar.png)
 
 **解决办法**
 
@@ -150,7 +155,7 @@ imgproc模块依赖于core模块，所以需要将core模块头文件、静态�
 #### 错误
 和编译core模块类似，出现了找不到`opencl_kernels_imgproc.hpp`文件，同样该文件是编译opencv源码后生成的，此处需要拷贝过来，然后添加包含路径:
 
-![编译错误](OpencvBuild/screen/imgproc_modules.png)
+![编译错误](/OpencvBuild/screen/imgproc_modules.png)
 
 接着进行编译，约1分钟编译ok了.
 
