@@ -217,6 +217,10 @@ android平台编译前需要配置好环境变量，以下是我的环境变量:
 
 ### ios平台
 
+配置好Qt for ios环境。以下是我编译时配置的环境.
+
+![ios平台环境参数](/OpencvBuild/screen/ios_env.png)
+
 
 ## 版本修改
 - V0.0.1 添加了可以编译成功的core、imgproc两个模块，成功编译成静态库;
