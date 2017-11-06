@@ -221,6 +221,12 @@ android平台编译前需要配置好环境变量，以下是我的环境变量:
 
 ![ios平台环境参数](/OpencvBuild/screen/ios_env.png)
 
+基本编译也是没有问题的，最终生成了两个模块对应的库文件:
+
+![ios平台生成的库文件](/OpencvBuild/screen/ios_core_size.png)
+
+![ios平台生成的库文件](/OpencvBuild/screen/ios_imgproc_size.png)
+
 
 ## 版本修改
 - V0.0.1 添加了可以编译成功的core、imgproc两个模块，成功编译成静态库;
