@@ -223,7 +223,11 @@ android平台编译前需要配置好环境变量，以下是我的环境变量:
 
 基本编译也是没有问题的，最终生成了两个模块对应的库文件:
 
+**core模块**
+
 ![ios平台生成的库文件](/OpencvBuild/screen/ios_core_size.png)
+
+**imgproc模块**
 
 ![ios平台生成的库文件](/OpencvBuild/screen/ios_imgproc_size.png)
 
