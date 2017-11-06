@@ -33,11 +33,6 @@ win32:{
 	DIR_PLATFORM = Win32
 	FILE_DLL_PREFIX =
 	FILE_DLL_EXT = .dll
-spider_static:{
-	# 始终编译成静态库
-	CONFIG += staticlib
-	CONFIG += USE_LIBRARY_ABN
-}
 }
 else:android:{
 	CONFIG(ARM_GCC_4.4.3, ARM_GCC_4.4.3|ARM_GCC_4.6|ARM_GCC_4.7|ARM_GCC_4.8):{

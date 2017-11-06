@@ -13,11 +13,14 @@ greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 INCLUDEPATH +=$$PWD/../Opencv/Opencv/core/include
 INCLUDEPATH +=$$PWD/../Opencv/Opencv/imgproc/include
 
-INCLUDEPATH +=D:\OpenCV\opencv-3.1.0\build-mingw53032\install\include
+INCLUDEPATH +=$$PWD/../Highgui/Include
 
 LIBS += -L$$PWD/../Opencv/Lib/$${DIR_PLATFORM}/$${DIR_COMPILER}/$${DIR_COMPILEMODE}/ -lopencvCore$${FILE_POSTFIX}
 LIBS += -L$$PWD/../Opencv/Lib/$${DIR_PLATFORM}/$${DIR_COMPILER}/$${DIR_COMPILEMODE}/ -lopencvImgProc$${FILE_POSTFIX}
-LIBS +=$$PWD/../Opencv/Lib/$${DIR_PLATFORM}/$${DIR_COMPILER}/$${DIR_COMPILEMODE}/libopencv_highgui310.dll
+#LIBS += -L D:/opencv/opencv-3.1.0/build_1104/install/x86/mingw/lib/libopencv_*.a
+#LIBS +=$$PWD/../Highgui/Lib/libopencv_highgui310.dll.a
+#LIBS +=$$PWD/../Highgui/Lib/libopencv_imgcodecs310.dll.a
+#LIBS +=$$PWD/../Highgui/Lib/libopencv*.a
 
 
 
@@ -26,3 +29,7 @@ TEMPLATE = app
 
 SOURCES += \
     main.cpp
+#    imgproctest.cpp
+
+#HEADERS += \
+#    imgproctest.h

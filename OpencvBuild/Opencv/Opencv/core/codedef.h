@@ -6,7 +6,10 @@
 #define UNICODE_WAS_UNDEFINED
 #endif
 
+#ifdef Q_OS_WIN
 #include <Windows.h>
+
+#endif
 
 #ifdef UNICODE_WAS_UNDEFINED
 #undef UNICODE
