@@ -201,6 +201,19 @@ zlib库很好编译，直接添加到Qt子工程中即可，设置目标target�
 
 ### android平台
 
+android平台编译前需要配置好环境变量，以下是我的环境变量:
+
+![android平台环境参数](/OpencvBuild/screen/android_env.png)
+
+设置好编译环境后，添加宏定义，以便区分编译后的文件:
+
+![android平台编译宏定义](/OpencvBuild/screen/android_config.png)
+
+然后直接编译，大约5分钟左右，编译完成，没有出现错误，很幸运.
+
+最终生成的库文件:
+
+![android平台编译生成库文件](/OpencvBuild/screen/android_lib.png)
 
 ### ios平台
 
