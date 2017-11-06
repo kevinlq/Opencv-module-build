@@ -1,7 +1,7 @@
 include ($$PWD/../3rdparty.pri)
 
 TEMPLATE    = lib
-TARGET  = libjpeg$${FILE_POSTFIX}
+TARGET  = jpeg$${FILE_POSTFIX}
 
 HEADERS += \
     jconfig.h \

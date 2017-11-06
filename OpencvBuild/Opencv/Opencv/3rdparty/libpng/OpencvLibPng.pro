@@ -1,7 +1,7 @@
 include ($$PWD/../3rdparty.pri)
 
 TEMPLATE    = lib
-TARGET  = libpng$${FILE_POSTFIX}
+TARGET  = png$${FILE_POSTFIX}
 
 HEADERS += \
     png.h \

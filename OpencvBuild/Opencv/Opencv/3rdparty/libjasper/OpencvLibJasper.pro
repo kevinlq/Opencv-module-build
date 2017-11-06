@@ -1,7 +1,7 @@
 include ($$PWD/../3rdparty.pri)
 
 TEMPLATE    = lib
-TARGET  = libjasper$${FILE_POSTFIX}
+TARGET  = jasper$${FILE_POSTFIX}
 
 INCLUDEPATH += $$PWD/jasper
 

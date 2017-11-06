@@ -1,7 +1,7 @@
 include ($$PWD/../3rdparty.pri)
 
 TEMPLATE    = lib
-TARGET  = libtiff$${FILE_POSTFIX}
+TARGET  = tiff$${FILE_POSTFIX}
 
 INCLUDEPATH += $$PWD/../include
 

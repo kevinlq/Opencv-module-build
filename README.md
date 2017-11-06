@@ -29,8 +29,7 @@ CMake:3.10.0-rc3-w64
 
 ![](/OpencvBuild/screen/build_all.png)
 
-
-## 编译`core`和`imgproc`两大模块
+---
 
 [opencv模块裁剪](http://blog.csdn.net/10km/article/details/72972844)
 
@@ -41,12 +40,11 @@ CMake:3.10.0-rc3-w64
 
 - `imgproc`模块依赖`core`模块
 
-编译成静态库
 
 ### windows平台
 使用`MinGW`工具链进行编译
 
-- **编译core模块**
+#### 编译core模块
 
 core模块编译过程中也是遇到了一些问题，大部分记录了下来，详细在后面问题记录里面
 
@@ -156,7 +154,7 @@ Google了下，这个问题是编码问题造成了，需要把自己电脑的�
 Debug:18.2M,Release:2.86M
 
 
-- **编译imgproc模块**
+#### 编译imgproc模块
 
 imgproc模块依赖于core模块，所以需要将core模块头文件、静态库(上一步编译好的)包含进来.
 
@@ -204,6 +202,29 @@ zlib库很好编译，直接添加到Qt子工程中即可，设置目标target�
 **解决方案**
 既然将zlib编译成静态库无法连接，那么就直接将zlib源码包含进来好了，和core模块一起编译算了，修改后终于编译成功了，最后连接成功了.
 
+#### 编译imgcodecs模块
+
+编译imgcodecs模块是为了编译higugui模块，后者依赖于前者，所以需要提前编译，测试发现，`imgcoedcs`模块依赖于`imgproc`模块，刚好该模块在上一步编译过了.
+
+直接拷贝到当前工程下，配置到pro中，参数按照上2个模块配置方法，编译.
+
+**出现错误:**
+
+- 找不到`ImfHeader.h`文件
+
+该文件是属于`openexr`开源库，是视觉效果行业使用的一种文件格式，适用于高动态范围图像.
+
+
+出现静态库无法连接问题
+
+* 问题描述:`imgcoedcs`模块依赖`tiff`库，已经将`tiff`编译成静态库了，并在`imgcoedcs`工程中引入了对应的头文件和库路径，在最后连接过程中无法找到……
+
+#### 编译highgui模块
+
+higugui模块依赖于`imgcodecs`模块，所以要先编译该模块.
+
+
+---
 
 ### android平台
 
@@ -220,6 +241,8 @@ android平台编译前需要配置好环境变量，以下是我的环境变量:
 最终生成的库文件:
 
 ![android平台编译生成库文件](/OpencvBuild/screen/android_lib.png)
+
+---
 
 ### ios平台
 
