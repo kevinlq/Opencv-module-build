@@ -129,13 +129,19 @@ Google了下，这个问题是编码问题造成了，需要把自己电脑的�
 #define UNICODE_WAS_UNDEFINED
 #endif
 
+#ifdef Q_OS_WIN
 #include <Windows.h>
+
+#endif
 
 #ifdef UNICODE_WAS_UNDEFINED
 #undef UNICODE
 #endif
 
 #define WINRT
+
+#endif // CODEDEF_H
+
 ```
 
 然后再core模块中将该头文件包含进去即可解决.
@@ -232,6 +238,11 @@ android平台编译前需要配置好环境变量，以下是我的环境变量:
 ![ios平台生成的库文件](/OpencvBuild/screen/ios_imgproc_size.png)
 
 >比较发现，同样的模块，在不同平台下编译出来大小不一样，差距还是很大的.
+
+## 问题与展望
+
+目前关于opencv这块相关模块参数配置项都在cvconfig.h中，可以考虑将其容纳到工程pro文件中，这样修改时直接修改工程文件即可，带来更大的方便.
+
 
 ## 版本修改
 - V0.0.1 添加了可以编译成功的core、imgproc两个模块，成功编译成静态库;
