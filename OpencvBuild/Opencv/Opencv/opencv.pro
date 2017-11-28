@@ -2,9 +2,11 @@ TEMPLATE = subdirs
 
 SUBDIRS += \
     $$PWD/3rdparty/3rdparty.pro \
-    $$PWD/core/OpencvCore.pro \
-    $$PWD/imgproc/OpencvImgproc.pro \
-    $$PWD/imgcodecs/OpencvImgcodecs.pro
+    $$PWD/core/opencvCore.pro \
+    $$PWD/imgproc/opencvImgproc.pro \
+    $$PWD/imgcodecs/opencvImgcodecs.pro \
+    $$PWD/highgui/opencvHighgui.pro
+
 
 CONFIG  +=order
 

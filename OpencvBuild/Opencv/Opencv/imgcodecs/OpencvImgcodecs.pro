@@ -8,32 +8,26 @@ TARGET  = opencvImgCodecs$${FILE_POSTFIX}
 INCLUDEPATH +=$$PWD/../core/include
 INCLUDEPATH +=$$PWD/include
 
+DIR_DEPEND_3RDPARTY_DEST=$$PWD/../3rdparty
 # openexr lib
-INCLUDEPATH +=$$PWD/../3rdparty/openexr/Half
-INCLUDEPATH +=$$PWD/../3rdparty/openexr/Iex
-INCLUDEPATH +=$$PWD/../3rdparty/openexr/IlmImf
-INCLUDEPATH +=$$PWD/../3rdparty/openexr/Imath
-LIBS += -L$$PWD/../3rdparty/Lib/$${DIR_PLATFORM}/$${DIR_COMPILER}/$${DIR_COMPILEMODE}/ -lopenexr$${FILE_POSTFIX}
+INCLUDEPATH +=$${DIR_DEPEND_3RDPARTY_DEST}/openexr/Half
+INCLUDEPATH +=$${DIR_DEPEND_3RDPARTY_DEST}/openexr/Iex
+INCLUDEPATH +=$${DIR_DEPEND_3RDPARTY_DEST}/openexr/IlmImf
+INCLUDEPATH +=$${DIR_DEPEND_3RDPARTY_DEST}/openexr/Imath
+INCLUDEPATH +=$${DIR_DEPEND_3RDPARTY_DEST}/libjpeg
+INCLUDEPATH +=$${DIR_DEPEND_3RDPARTY_DEST}/libjasper
+INCLUDEPATH +=$${DIR_DEPEND_3RDPARTY_DEST}/libpng
+INCLUDEPATH +=$${DIR_DEPEND_3RDPARTY_DEST}/libtiff
+INCLUDEPATH +=$${DIR_DEPEND_3RDPARTY_DEST}/include
+INCLUDEPATH +=$${DIR_DEPEND_3RDPARTY_DEST}/include/tifconfig/$${DIR_PLATFORM}/$${DIR_COMPILER}
 
-#jpeg lib
-INCLUDEPATH +=$$PWD/../3rdparty/libjpeg
-LIBS += -L$$PWD/../3rdparty/Lib/$${DIR_PLATFORM}/$${DIR_COMPILER}/$${DIR_COMPILEMODE}/ -ljpeg$${FILE_POSTFIX}
+DIR_DEPEND_3RDPARTY_DEST=$$PWD/../3rdparty/Lib
+LIBS += -L$${DIR_DEPEND_3RDPARTY_DEST}/$${DIR_PLATFORM}/$${DIR_COMPILER}/$${DIR_COMPILEMODE}/ -lopenexr$${FILE_POSTFIX}
+LIBS += -L$${DIR_DEPEND_3RDPARTY_DEST}/$${DIR_PLATFORM}/$${DIR_COMPILER}/$${DIR_COMPILEMODE}/ -ljpeg$${FILE_POSTFIX}
+LIBS += -L$${DIR_DEPEND_3RDPARTY_DEST}/$${DIR_PLATFORM}/$${DIR_COMPILER}/$${DIR_COMPILEMODE}/ -ljasper$${FILE_POSTFIX}
+LIBS += -L$${DIR_DEPEND_3RDPARTY_DEST}/$${DIR_PLATFORM}/$${DIR_COMPILER}/$${DIR_COMPILEMODE}/ -lpng$${FILE_POSTFIX}
+LIBS += -L$${DIR_DEPEND_3RDPARTY_DEST}/$${DIR_PLATFORM}/$${DIR_COMPILER}/$${DIR_COMPILEMODE}/ -ltiff$${FILE_POSTFIX}
 
-# jasper lib
-INCLUDEPATH +=$$PWD/../3rdparty/libjasper
-LIBS += -L$$PWD/../3rdparty/Lib/$${DIR_PLATFORM}/$${DIR_COMPILER}/$${DIR_COMPILEMODE}/ -ljasper$${FILE_POSTFIX}
-
-# png lib
-INCLUDEPATH +=$$PWD/../3rdparty/libpng
-LIBS += -L$$PWD/../3rdparty/Lib/$${DIR_PLATFORM}/$${DIR_COMPILER}/$${DIR_COMPILEMODE}/ -lpng$${FILE_POSTFIX}
-
-# tiff lib
-INCLUDEPATH +=$$PWD/../3rdparty/libtiff
-INCLUDEPATH +=$$PWD/../3rdparty/include
-INCLUDEPATH +=$$PWD/../3rdparty/include/tifconfig/$${DIR_PLATFORM}/$${DIR_COMPILER}
-LIBS += -L$$PWD/../3rdparty/Lib/$${DIR_PLATFORM}/$${DIR_COMPILER}/$${DIR_COMPILEMODE}/ -ltiff$${FILE_POSTFIX}
-
-message($$PWD/../3rdparty/include/tifconfig/$${DIR_PLATFORM}/$${DIR_COMPILER})
 
 SOURCES += \
     src/bitstrm.cpp \
