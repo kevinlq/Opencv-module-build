@@ -101,5 +101,4 @@ public:
     }
 
 };
-
 #endif // IMGPROCTEST_H

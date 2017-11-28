@@ -29,28 +29,11 @@ LIBS += -L$$PWD/../3rdparty/Lib/$${DIR_PLATFORM}/$${DIR_COMPILER}/$${DIR_COMPILE
 
 # tiff lib
 INCLUDEPATH +=$$PWD/../3rdparty/libtiff
-LIBS += -L$$PWD/../3rdparty/Lib/$${DIR_PLATFORM}/$${DIR_COMPILER}/$${DIR_COMPILEMODE}/ -ltiff$${FILE_POSTFIX}
 INCLUDEPATH +=$$PWD/../3rdparty/include
+INCLUDEPATH +=$$PWD/../3rdparty/include/tifconfig/$${DIR_PLATFORM}/$${DIR_COMPILER}
+LIBS += -L$$PWD/../3rdparty/Lib/$${DIR_PLATFORM}/$${DIR_COMPILER}/$${DIR_COMPILEMODE}/ -ltiff$${FILE_POSTFIX}
 
-HEADERS += \
-    src/bitstrm.hpp \
-    src/grfmt_base.hpp \
-    src/grfmt_bmp.hpp \
-    src/grfmt_exr.hpp \
-    src/grfmt_gdal.hpp \
-    src/grfmt_hdr.hpp \
-    src/grfmt_jpeg.hpp \
-    src/grfmt_jpeg2000.hpp \
-    src/grfmt_png.hpp \
-    src/grfmt_pxm.hpp \
-    src/grfmt_sunras.hpp \
-    src/grfmt_tiff.hpp \
-    src/grfmt_webp.hpp \
-    src/grfmts.hpp \
-    src/jpeg_exif.hpp \
-    src/precomp.hpp \
-    src/rgbe.hpp \
-    src/utils.hpp
+message($$PWD/../3rdparty/include/tifconfig/$${DIR_PLATFORM}/$${DIR_COMPILER})
 
 SOURCES += \
     src/bitstrm.cpp \

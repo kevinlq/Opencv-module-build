@@ -2,9 +2,17 @@
 
 //#include "imgproctest.h"
 
+#include "opencv2/core.hpp"
+#include "opencv2/imgproc.hpp"
+
+using namespace cv;
+
+Mat img;
+
+
 int main(int argc, char *argv[])
 {
-    //ImgProcTest test("1.png");
+//    ImgProcTest test("1.png");
     //低通滤波测试
     //test.blurTest ();
 
@@ -15,9 +23,10 @@ int main(int argc, char *argv[])
     //test.sobelTest ();
 
     //图像的拉普拉斯变换
-    //test.laplacTest ();
+//    test.laplacTest ();
 
-    //waitKey(0);
+
+//    waitKey(0);
 
     return 0;
 }

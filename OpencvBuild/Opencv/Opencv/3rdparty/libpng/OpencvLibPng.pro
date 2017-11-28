@@ -3,14 +3,6 @@ include ($$PWD/../3rdparty.pri)
 TEMPLATE    = lib
 TARGET  = png$${FILE_POSTFIX}
 
-HEADERS += \
-    png.h \
-    pngconf.h \
-    pngdebug.h \
-    pnginfo.h \
-    pnglibconf.h \
-    pngpriv.h \
-    pngstruct.h
 
 SOURCES += \
     png.c \

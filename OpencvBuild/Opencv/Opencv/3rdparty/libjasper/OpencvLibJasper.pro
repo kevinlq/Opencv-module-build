@@ -5,33 +5,6 @@ TARGET  = jasper$${FILE_POSTFIX}
 
 INCLUDEPATH += $$PWD/jasper
 
-
-HEADERS += \
-    jp2_cod.h \
-    jp2_dec.h \
-    jpc_bs.h \
-    jpc_cod.h \
-    jpc_cs.h \
-    jpc_dec.h \
-    jpc_enc.h \
-    jpc_fix.h \
-    jpc_flt.h \
-    jpc_math.h \
-    jpc_mct.h \
-    jpc_mqcod.h \
-    jpc_mqdec.h \
-    jpc_mqenc.h \
-    jpc_qmfb.h \
-    jpc_t1cod.h \
-    jpc_t1dec.h \
-    jpc_t1enc.h \
-    jpc_t2cod.h \
-    jpc_t2dec.h \
-    jpc_t2enc.h \
-    jpc_tagtree.h \
-    jpc_tsfb.h \
-    jpc_util.h
-
 SOURCES += \
     jas_cm.c \
     jas_debug.c \

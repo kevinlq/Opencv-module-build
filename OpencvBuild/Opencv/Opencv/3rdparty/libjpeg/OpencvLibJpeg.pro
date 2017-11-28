@@ -3,17 +3,6 @@ include ($$PWD/../3rdparty.pri)
 TEMPLATE    = lib
 TARGET  = jpeg$${FILE_POSTFIX}
 
-HEADERS += \
-    jconfig.h \
-    jdct.h \
-    jerror.h \
-    jinclude.h \
-    jmemsys.h \
-    jmorecfg.h \
-    jpegint.h \
-    jpeglib.h \
-    jversion.h
-
 SOURCES += \
     jaricom.c \
     jcapimin.c \

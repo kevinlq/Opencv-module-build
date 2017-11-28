@@ -1,7 +1,7 @@
 TEMPLATE = subdirs
 
 SUBDIRS += \
-    $$PWD/Opencv/Opencv/Opencv.pro \
+    $$PWD/Opencv/Opencv/opencv.pro \
     $$PWD/Test/Test.pro
 
 CONFIG  +=order

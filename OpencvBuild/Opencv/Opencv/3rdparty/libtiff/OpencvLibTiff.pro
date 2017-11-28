@@ -5,18 +5,7 @@ TARGET  = tiff$${FILE_POSTFIX}
 
 INCLUDEPATH += $$PWD/../include
 
-HEADERS += \
-    t4.h \
-    tif_config.h.cmakein \
-    tif_dir.h \
-    tif_fax3.h \
-    tif_predict.h \
-    tiff.h \
-    tiffio.h \
-    tiffio.hxx \
-    tiffiop.h \
-    tiffvers.h \
-    uvcode.h
+INCLUDEPATH += $$PWD/../include/tifconfig/$${DIR_PLATFORM}/$${DIR_COMPILER}
 
 SOURCES += \
     tif_stream.cxx \
@@ -54,9 +43,15 @@ SOURCES += \
     tif_swab.c \
     tif_thunder.c \
     tif_tile.c \
-    tif_unix.c \
     tif_version.c \
     tif_warning.c \
-    tif_win32.c \
     tif_write.c \
     tif_zip.c
+
+win32:{
+    SOURCES +=$$PWD/tif_win32.c
+}
+linux:{
+    SOURCES +=$$PWD/tif_unix.c
+}
+

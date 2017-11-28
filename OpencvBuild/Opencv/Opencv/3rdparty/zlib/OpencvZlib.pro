@@ -3,19 +3,6 @@ include ($$PWD/../3rdparty.pri)
 TEMPLATE    = lib
 TARGET  = zlib$${FILE_POSTFIX}
 
-HEADERS += \
-    crc32.h \
-    deflate.h \
-    gzguts.h \
-    inffast.h \
-    inffixed.h \
-    inflate.h \
-    inftrees.h \
-    trees.h \
-    zlib.h \
-    zutil.h \
-    zconf.h
-
 SOURCES += \
     adler32.c \
     compress.c \

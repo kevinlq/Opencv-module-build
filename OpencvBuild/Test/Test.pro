@@ -10,29 +10,42 @@ QT       += core gui
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
-INCLUDEPATH +=$$PWD/../Opencv/Opencv/core/include
-INCLUDEPATH +=$$PWD/../Opencv/Opencv/imgproc/include
-INCLUDEPATH +=$$PWD/../Opencv/Opencv/imgcodecs/include
-INCLUDEPATH +=$$PWD/ts/include
-
-INCLUDEPATH +=$$PWD/../Highgui/Include
-
-LIBS += -L$$PWD/../Opencv/Lib/$${DIR_PLATFORM}/$${DIR_COMPILER}/$${DIR_COMPILEMODE}/ -lopencvCore$${FILE_POSTFIX}
-LIBS += -L$$PWD/../Opencv/Lib/$${DIR_PLATFORM}/$${DIR_COMPILER}/$${DIR_COMPILEMODE}/ -lopencvImgProc$${FILE_POSTFIX}
-LIBS += -L$$PWD/../Opencv/Lib/$${DIR_PLATFORM}/$${DIR_COMPILER}/$${DIR_COMPILEMODE}/ -lopencvImgCodecs$${FILE_POSTFIX}
-#LIBS += -L D:/opencv/opencv-3.1.0/build_1104/install/x86/mingw/lib/libopencv_*.a
-
-LIBS +=$$PWD/../Highgui/Lib/libopencv_imgcodecs310.dll.a
-LIBS +=$$PWD/../Highgui/Lib/libopencv*.a
-
-
-
 TARGET = Test
 TEMPLATE = app
 
-SOURCES += \
-    main.cpp \
-    imgproctest.cpp
 
-HEADERS += \
-    imgproctest.h
+INCLUDEPATH +=$$PWD/../Opencv/Opencv/core/include
+INCLUDEPATH +=$$PWD/../Opencv/Opencv/imgproc/include
+
+INCLUDEPATH +=$$PWD/../Highgui/Include
+
+
+
+#LIBS +=$$PWD/../Highgui/Lib/libopencv_highgui310.dll.a
+#LIBS +=$$PWD/../Highgui/Lib/libopencv_imgcodecs310.dll.a
+#LIBS +=$$PWD/../Highgui/Lib/libopencv*.a
+
+DIR_DEPEND_OPENCV_DEST = $$PWD/../Opencv/Lib/$${DIR_PLATFORM}/$${DIR_COMPILER}/$${DIR_COMPILEMODE}/
+
+message($${DIR_DEPEND_OPENCV_DEST})
+
+DIR_DEPEND_ZLIB_DEST    = $$PWD/../Opencv/Opencv/3rdparty/Lib/$${DIR_PLATFORM}/$${DIR_COMPILER}/$${DIR_COMPILEMODE}/
+
+LIBS += -L$${DIR_DEPEND_OPENCV_DEST} -lopencvImgProc$${FILE_POSTFIX}
+LIBS += -L$${DIR_DEPEND_OPENCV_DEST} -lopencvCore$${FILE_POSTFIX}
+LIBS += -L$${DIR_DEPEND_ZLIB_DEST} -lzlib$${FILE_POSTFIX}
+LIBS  +=-ldl
+
+PRE_TARGETDEPS += $${DIR_DEPEND_OPENCV_DEST}/$${FILE_LIB_PREFIX}opencvCore$${FILE_POSTFIX}$${FILE_LIB_EXT}
+PRE_TARGETDEPS += $${DIR_DEPEND_OPENCV_DEST}/$${FILE_LIB_PREFIX}opencvImgProc$${FILE_POSTFIX}$${FILE_LIB_EXT}
+
+
+SOURCES += \
+    main.cpp
+
+#SOURCES +=\
+#    imgproctest.cpp
+
+#HEADERS += \
+#    imgproctest.h
+

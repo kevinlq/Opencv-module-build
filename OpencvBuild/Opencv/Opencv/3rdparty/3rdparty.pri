@@ -127,7 +127,7 @@ else:linux:{
         }
         else:CONFIG(GCC64, GCC|GCC32|GCC64):{
                 DIR_PLATFORM = Linux64
-                DIR_COMPILER = GCC
+                DIR_COMPILER = GCC64
         }
 
         FILE_LIB_PREFIX = lib

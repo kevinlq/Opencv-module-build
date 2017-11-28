@@ -121,15 +121,15 @@
 /* #undef HAVE_NVCUVID */
 
 /* OpenCL Support */
-#define HAVE_OPENCL
+//#define HAVE_OPENCL
 /* #undef HAVE_OPENCL_STATIC */
 /* #undef HAVE_OPENCL_SVM */
 
 /* OpenEXR codec */
-#define HAVE_OPENEXR
+//#define HAVE_OPENEXR
 
 /* OpenGL support*/
-#define HAVE_OPENGL
+//#define HAVE_OPENGL
 
 /* OpenNI library */
 /* #undef HAVE_OPENNI */

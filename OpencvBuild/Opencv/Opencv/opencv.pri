@@ -127,7 +127,7 @@ else:linux:{
         }
         else:CONFIG(GCC64, GCC|GCC32|GCC64):{
                 DIR_PLATFORM = Linux64
-                DIR_COMPILER = GCC
+                DIR_COMPILER = GCC64
         }
 
         FILE_LIB_PREFIX = lib
@@ -147,11 +147,11 @@ else:{
 
 # 始终编译成静态库
 CONFIG += staticlib
-CONFIG += plugin
 
 #QMAKE_LFLAGS += -static-libgcc
-QMAKE_LFLAGS += -frtti -fexceptions
-QMAKE_LFLAGS += -lz
+#QMAKE_LFLAGS += -frtti -fexceptions
+#QMAKE_LFLAGS += -lz
+
 
 CONFIG(staticlib, staticlib):{
         DIR_DEPEND_DEST = $$PWD/../Lib/$${DIR_PLATFORM}/$${DIR_COMPILER}/$${DIR_COMPILEMODE}
