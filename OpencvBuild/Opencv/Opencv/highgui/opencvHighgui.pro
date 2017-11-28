@@ -5,10 +5,12 @@ TEMPLATE    = lib
 
 TARGET  = highgui$${FILE_POSTFIX}
 
+INCLUDEPATH +=$$PWD/src
 INCLUDEPATH +=$$PWD/include
 INCLUDEPATH +=$$PWD/../core/include
 INCLUDEPATH +=$$PWD/../imgproc/include
 INCLUDEPATH +=$$PWD/../imgcodecs/include
+INCLUDEPATH +=$$PWD/../videoio/include
 
 DIR_DEPEND_OPENCV_DEST = $$PWD/../../Lib/$${DIR_PLATFORM}/$${DIR_COMPILER}/$${DIR_COMPILEMODE}
 
@@ -17,7 +19,7 @@ LIBS+=L$${DIR_DEPEND_OPENCV_DEST}/$${DIR_PLATFORM}/$${DIR_COMPILER}/$${DIR_COMPI
 
 SOURCES += \
     src/window.cpp \
-    src/window_carbon.cpp \
+#    src/window_carbon.cpp \
     src/window_gtk.cpp \
     src/window_QT.cpp \
     src/window_winrt.cpp \

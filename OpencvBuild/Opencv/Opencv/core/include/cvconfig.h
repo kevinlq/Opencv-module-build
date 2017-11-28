@@ -151,10 +151,10 @@
 #define HAVE_PTHREADS_PF
 
 /* Qt support */
-#define HAVE_QT
+//#define HAVE_QT
 
 /* Qt OpenGL support */
-#define HAVE_QT_OPENGL
+//#define HAVE_QT_OPENGL
 
 /* QuickTime video libraries */
 /* #undef HAVE_QUICKTIME */
