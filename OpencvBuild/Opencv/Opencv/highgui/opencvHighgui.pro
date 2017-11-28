@@ -4,6 +4,7 @@ include ($$PWD/../opencv.pri)
 TEMPLATE    = lib
 
 TARGET  = highgui$${FILE_POSTFIX}
+DEFINES -=UNICODE
 
 INCLUDEPATH +=$$PWD/src
 INCLUDEPATH +=$$PWD/include
@@ -22,8 +23,8 @@ SOURCES += \
 #    src/window_carbon.cpp \
     src/window_gtk.cpp \
     src/window_QT.cpp \
-    src/window_winrt.cpp \
-    src/window_winrt_bridge.cpp
+#    src/window_winrt.cpp \
+#    src/window_winrt_bridge.cpp
 
 win32:{
     SOURCES +=$$PWD/src/window_w32.cpp

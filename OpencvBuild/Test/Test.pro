@@ -16,8 +16,9 @@ TEMPLATE = app
 
 INCLUDEPATH +=$$PWD/../Opencv/Opencv/core/include
 INCLUDEPATH +=$$PWD/../Opencv/Opencv/imgproc/include
-
-INCLUDEPATH +=$$PWD/../Highgui/Include
+INCLUDEPATH +=$$PWD/../Opencv/Opencv/imgcodecs/include
+INCLUDEPATH +=$$PWD/../Opencv/Opencv/videoio/include
+INCLUDEPATH +=$$PWD/../Opencv/Opencv/highgui/include
 
 
 
@@ -26,13 +27,14 @@ INCLUDEPATH +=$$PWD/../Highgui/Include
 #LIBS +=$$PWD/../Highgui/Lib/libopencv*.a
 
 DIR_DEPEND_OPENCV_DEST = $$PWD/../Opencv/Lib/$${DIR_PLATFORM}/$${DIR_COMPILER}/$${DIR_COMPILEMODE}/
-
-
-DIR_DEPEND_ZLIB_DEST    = $$PWD/../Opencv/Opencv/3rdparty/Lib/$${DIR_PLATFORM}/$${DIR_COMPILER}/$${DIR_COMPILEMODE}/
+DIR_DEPEND_3RD_DEST    = $$PWD/../Opencv/Opencv/3rdparty/Lib/$${DIR_PLATFORM}/$${DIR_COMPILER}/$${DIR_COMPILEMODE}/
 
 LIBS += -L$${DIR_DEPEND_OPENCV_DEST} -lopencvImgProc$${FILE_POSTFIX}
 LIBS += -L$${DIR_DEPEND_OPENCV_DEST} -lopencvCore$${FILE_POSTFIX}
-LIBS += -L$${DIR_DEPEND_ZLIB_DEST} -lzlib$${FILE_POSTFIX}
+LIBS += -L$${DIR_DEPEND_OPENCV_DEST} -lopencvImgCodecs$${FILE_POSTFIX}
+LIBS += -L$${DIR_DEPEND_OPENCV_DEST} -lhighgui$${FILE_POSTFIX}
+LIBS += -L$${DIR_DEPEND_3RD_DEST} -lzlib$${FILE_POSTFIX}
+LIBS += -L$${DIR_DEPEND_3RD_DEST} -ltiff$${FILE_POSTFIX}
 linux:{
 LIBS  +=-ldl
 }
@@ -40,14 +42,15 @@ LIBS  +=-ldl
 
 PRE_TARGETDEPS += $${DIR_DEPEND_OPENCV_DEST}/$${FILE_LIB_PREFIX}opencvCore$${FILE_POSTFIX}$${FILE_LIB_EXT}
 PRE_TARGETDEPS += $${DIR_DEPEND_OPENCV_DEST}/$${FILE_LIB_PREFIX}opencvImgProc$${FILE_POSTFIX}$${FILE_LIB_EXT}
+PRE_TARGETDEPS += $${DIR_DEPEND_OPENCV_DEST}/$${FILE_LIB_PREFIX}highgui$${FILE_POSTFIX}$${FILE_LIB_EXT}
 
 
 SOURCES += \
     main.cpp
 
-#SOURCES +=\
-#    imgproctest.cpp
+SOURCES +=\
+    imgproctest.cpp
 
-#HEADERS += \
-#    imgproctest.h
+HEADERS += \
+    imgproctest.h
 
