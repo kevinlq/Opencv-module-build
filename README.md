@@ -6,7 +6,7 @@ opencv模块裁剪编译
 >Email  :kevinlq0912@163.com  
 QQ      :2313828706  
 Oschina :http://git.oschina.net/kevinlq0912   
-GitHub  :https://github.com/kevinlq 
+GitHub  :https://github.com/kevinlq
 
 ## 环境说明
 >OS:windows7 64b  
@@ -105,11 +105,11 @@ Google解决:一个朋友说是直接删除掉....我注释掉了.
 - 类型出现问题
 
 ```C++
-Opencv\core\src\glob.cpp:117: error: cannot convert 'WIN32_FIND_DATA* 
+Opencv\core\src\glob.cpp:117: error: cannot convert 'WIN32_FIND_DATA*
 {aka _WIN32_FIND_DATAW*}' to 'LPWIN32_FIND_DATAA {aka _WIN32_FIND_DATAA*}'
  for argument '2' to 'WINBOOL FindNextFileA(HANDLE, LPWIN32_FIND_DATAA)'
              if (::FindNextFileA(dir->handle, &dir->data) != TRUE)
-			 
+
 ```
 
 ![](/OpencvBuild/screen/wchar.png)
@@ -261,6 +261,29 @@ android平台编译前需要配置好环境变量，以下是我的环境变量:
 ![ios平台生成的库文件](/OpencvBuild/screen/ios_imgproc_size.png)
 
 >比较发现，同样的模块，在不同平台下编译出来大小不一样，差距还是很大的.
+
+
+## 测试
+添加测试子工程进行测试
+
+```
+LIBS += -L$${DIR_DEPEND_OPENCV_DEST} -lopencvImgProc$${FILE_POSTFIX}
+LIBS += -L$${DIR_DEPEND_OPENCV_DEST} -lopencvCore$${FILE_POSTFIX}
+LIBS += -L$${DIR_DEPEND_OPENCV_DEST} -lzlib$${FILE_POSTFIX}
+LIBS  +=-ldl
+
+PRE_TARGETDEPS += $${DIR_DEPEND_OPENCV_DEST}/$${FILE_LIB_PREFIX}opencvCore$${FILE_POSTFIX}$${FILE_LIB_EXT}
+PRE_TARGETDEPS += $${DIR_DEPEND_OPENCV_DEST}/$${FILE_LIB_PREFIX}opencvImgProc$${FILE_POSTFIX}$${FILE_LIB_EXT}
+```
+
+上述`LIBS  +=-ldl`是必须的,要不在链接的时候会出错!
+
+```
+:-1: error: /home/qi/qt-project/Test/Opencv/Lib/Release//libopencvCore.a(ocl.o): undefined reference to symbol 'dlsym@@GLIBC_2.2.5'
+
+/usr/lib/x86_64-linux-gnu/libdl.so:-1: error: error adding symbols: DSO missing from command line
+```
+
 
 ## 问题与展望
 

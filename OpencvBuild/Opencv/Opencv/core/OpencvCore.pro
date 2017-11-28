@@ -15,48 +15,6 @@ LIBS += -L$$PWD/../3rdparty/Lib/$${DIR_PLATFORM}/$${DIR_COMPILER}/$${DIR_COMPILE
 INCLUDEPATH +=$$PWD/include
 INCLUDEPATH +=$$PWD/include/opencv2
 
-# this is zlib file
-HEADERS += \
-    $$PWD/../3rdparty/zlib/crc32.h \
-    $$PWD/../3rdparty/zlib/deflate.h \
-    $$PWD/../3rdparty/zlib/gzguts.h \
-    $$PWD/../3rdparty/zlib/inffast.h \
-    $$PWD/../3rdparty/zlib/inffixed.h \
-    $$PWD/../3rdparty/zlib/inflate.h \
-    $$PWD/../3rdparty/zlib/inftrees.h \
-    $$PWD/../3rdparty/zlib/trees.h \
-    $$PWD/../3rdparty/zlib/zlib.h \
-    $$PWD/../3rdparty/zlib/zutil.h \
-    $$PWD/../3rdparty/zlib/zconf.h
-
-SOURCES += \
-    $$PWD/../3rdparty/zlib/adler32.c \
-    $$PWD/../3rdparty/zlib/compress.c \
-    $$PWD/../3rdparty/zlib/crc32.c \
-    $$PWD/../3rdparty/zlib/deflate.c \
-    $$PWD/../3rdparty/zlib/gzclose.c \
-    $$PWD/../3rdparty/zlib/gzlib.c \
-    $$PWD/../3rdparty/zlib/gzread.c \
-    $$PWD/../3rdparty/zlib/gzwrite.c \
-    $$PWD/../3rdparty/zlib/infback.c \
-    $$PWD/../3rdparty/zlib/inffast.c \
-    $$PWD/../3rdparty/zlib/inflate.c \
-    $$PWD/../3rdparty/zlib/inftrees.c \
-    $$PWD/../3rdparty/zlib/trees.c \
-    $$PWD/../3rdparty/zlib/uncompr.c \
-    $$PWD/../3rdparty/zlib/zutil.c
-
-
-HEADERS += \
-    src/arithm_core.hpp \
-    src/arithm_simd.hpp \
-    src/bufferpool.impl.hpp \
-    src/directx.inc.hpp \
-    src/gl_core_3_1.hpp \
-    src/hal_replacement.hpp \
-    src/precomp.hpp \
-    codedef.h
-
 SOURCES += \
     src/algorithm.cpp \
     src/alloc.cpp \
@@ -104,5 +62,11 @@ SOURCES += \
     src/umatrix.cpp \
     src/va_intel.cpp
 
+DIR_DEPEND_ZLIB_DEST =$$PWD/../3rdparty/Lib/$${DIR_PLATFORM}/$${DIR_COMPILER}/$${DIR_COMPILEMODE}/
+#DIR_DEPEND_ZLIB_DEST =$$PWD/../3rdparty/Lib/Linux64/GCC/$${DIR_COMPILEMODE}
+PRE_TARGETDEPS  += $${DIR_DEPEND_ZLIB_DEST}/libzlib$${FILE_POSTFIX}$${FILE_LIB_EXT}
 
-message ($$QT_VERSION)
+#QMAKE_LIBDIR += -ldl
+
+
+message($${DIR_DEPEND_ZLIB_DEST})

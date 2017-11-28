@@ -16,11 +16,11 @@ INCLUDEPATH +=$$PWD/../../Include/modules/imgproc
 INCLUDEPATH +=$$PWD/include
 
 
-HEADERS += \
-    src/_geom.h \
-    src/filterengine.hpp \
-    src/gcgraph.hpp \
-    src/precomp.hpp
+#HEADERS += \
+#    src/_geom.h \
+#    src/filterengine.hpp \
+#    src/gcgraph.hpp \
+#    src/precomp.hpp
 
 SOURCES += \
     src/accum.cpp \
@@ -75,4 +75,7 @@ SOURCES += \
     src/undistort.cpp \
     src/utils.cpp
 
-
+DIR_DEPEND_ZLIB_DEST =$$PWD/../3rdparty/Lib/$${DIR_PLATFORM}/$${DIR_COMPILER}/$${DIR_COMPILEMODE}/
+#DIR_DEPEND_ZLIB_DEST =$$PWD/../3rdparty/Lib/Linux64/GCC/$${DIR_COMPILEMODE}
+PRE_TARGETDEPS  += $${DIR_DEPEND_ZLIB_DEST}/libzlib$${FILE_POSTFIX}$${FILE_LIB_EXT}
+PRE_TARGETDEPS  += $$PWD/../../Lib/$${DIR_PLATFORM}/$${DIR_COMPILER}/$${DIR_COMPILEMODE}/libopencvCore$${FILE_POSTFIX}$${FILE_LIB_EXT}
